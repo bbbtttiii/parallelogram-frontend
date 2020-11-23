@@ -42,7 +42,7 @@ const Login = ({ loginFormData, updateLoginForm, login }) => {
 // }
 const mapStateToProps = state => {
   return {
-    loginForm: state.loginForm
+    loginFormData: state.loginForm
   }
 }
 
