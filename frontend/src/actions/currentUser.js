@@ -18,5 +18,14 @@ export const login = info => {
       },
       body: JSON.stringify(info)
     })
+    .then(r => r.json())
+    .then(user => {
+      if (user.error) {
+        alert(user.error)
+      } else {
+        dispatch(setCurrentUser(user))
+      }
+    })
+    .catch()
   }
 }
