@@ -11,27 +11,27 @@ const Login = ({ loginFormData, updateLoginForm, login }) => {
     updateLoginForm(updatedFormInfo)
   }
 
-const handleOnSubmit = event => {
-  event.preventDefault();
-  login(loginFormData)
-}
+  const handleOnSubmit = event => {
+    event.preventDefault();
+    login(loginFormData)
+  }
 
-return (
-  <form onSubmit={handleOnSubmit}>
-    <input
-      type="text"
-      placeholder="username"
-      name="username"
-      value={loginFormData.username}
-      onChange={handleInputChange} />
-    <input
-      type="text"
-      placeholder="password"
-      name="password"
-      value={loginFormData.password}
-      onChange={handleInputChange} />
-    <input type="submit" value="Log In"/>
-  </form>
+  return (
+    <form onSubmit={handleOnSubmit}>
+      <input
+        type="text"
+        placeholder="username"
+        name="username"
+        value={loginFormData.username}
+        onChange={handleInputChange} />
+      <input
+        type="text"
+        placeholder="password"
+        name="password"
+        value={loginFormData.password}
+        onChange={handleInputChange} />
+      <input type="submit" value="Log In"/>
+    </form>
   )
 }
 
