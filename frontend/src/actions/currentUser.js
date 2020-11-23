@@ -2,8 +2,14 @@
 
 export const setCurrentUser = user => {
   return {
-    type: 'SET_CURENT_USER',
+    type: 'SET_CURRENT_USER',
     user: user
+  }
+}
+
+export const clearCurrentUser = () => {
+  return {
+    type: "CLEAR_CURRENT_USER"
   }
 }
 
@@ -33,7 +39,13 @@ export const login = info => {
 }
 
 export const logout = () => {
-  return fetch()
+  return (dispatch) => {
+    dispatch(clearCurrentUser())
+    return fetch('http://localhost:3001/api/v1/logout', {
+      credentials: "include",
+      method: "DELETE"
+    })
+  }
 }
 
 export const getCurrentUser = () => {
