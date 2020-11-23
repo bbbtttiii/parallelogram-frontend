@@ -1,4 +1,5 @@
 // synchronous action creators
+
 export const setCurrentUser = user => {
   return {
     type: 'SET_CURENT_USER',
@@ -8,9 +9,11 @@ export const setCurrentUser = user => {
 
 
 // asynchronous action creators
+
 export const login = info => {
   return dispatch => {
     return fetch('http://localhost:3001/api/v1/login', {
+      credentials: "include",
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -25,13 +28,14 @@ export const login = info => {
         dispatch(setCurrentUser(user))
       }
     })
-    .catch()
+    .catch(console.log)
   }
 }
 
 export const getCurrentUser = () => {
   return dispatch => {
     return fetch('http://localhost:3001/api/v1/get_current_user', {
+      credentials: "include",
       method: 'GET',
       headers: {
         'Content-Type': 'application/json'
@@ -45,6 +49,6 @@ export const getCurrentUser = () => {
         dispatch(setCurrentUser(user))
       }
     })
-    .catch()
+    .catch(console.log)
   }
 }
