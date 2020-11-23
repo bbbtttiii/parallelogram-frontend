@@ -1,13 +1,20 @@
 import React from 'react';
-import { connect } from 'react-redux'
+import { connect } from 'react-redux';
+import Login from './Login.js';
+import Logout from './Logout.js';
 
-const Nav = ({}) => {
+const Nav = ({ currentUser }) => {
   return (
     <div>
-
+      {currentUser ? <Logout /> : <Login />}
     </div>
   )
 }
 
+const mapStateToProps = ({ currentUser }) => {
+  return {
+    currentUser
+  }
+}
 
-export default Nav;
+export default connect(mapStateToProps)(Nav);
