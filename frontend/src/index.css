@@ -17,29 +17,27 @@ html, body {
   width: 90%;
   max-width: 1000px;
   margin: 0 auto;
-  display: grid;
+  display: flex;
   grid-template-columns: 1fr 1fr 1fr;
   background-color: lightblue;
+  align-items: center;
 }
 
 .title {
-  font-size: 1.5em;
+  font-size: 2em;
   display: inline;
   padding: 20px;
 }
 
 .left-nav {
   margin: 0;
-  grid-column: 1 / 2;
-  justify-self: start;
-  align-self: center;
+  flex: 1 1 200px;
   display:inline;
 }
 
 .right-nav {
-  grid-column: 2 / 3;
-  justify-self: end;
-  align-self: center;
+  display: inline-block;
+  text-align: center;
   display: inline;
 }
 
@@ -49,10 +47,33 @@ html, body {
   max-width: 1000px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 1rem;
 }
 
 .Main > div {
-  padding: 1.5rem;
+  border: 1px solid black;
+  /* padding: 1.5rem; */
 }
+
+button, input {
+  font-size: 1em;
+  border: 1px solid black;
+  text-decoration: none;
+  display: inline-block;
+  background-color: transparent;
+  cursor: auto;
+}
+
+/* .article-title {
+
+}
+
+.article-photo {
+
+}
+
+.article-details {
+
+} */
+
