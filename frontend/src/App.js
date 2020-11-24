@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './index.css';
 import { connect } from 'react-redux';
 import { getCurrentUser } from './actions/currentUser.js'
 import Nav from './components/Nav.js'
