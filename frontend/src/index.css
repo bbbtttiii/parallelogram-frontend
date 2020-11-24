@@ -26,7 +26,7 @@ html, body {
 .title {
   font-size: 2em;
   display: inline;
-  padding: 20px;
+  padding-right: 20px;
 }
 
 .left-nav {
@@ -36,8 +36,6 @@ html, body {
 }
 
 .right-nav {
-  display: inline-block;
-  text-align: center;
   display: inline;
 }
 
@@ -80,5 +78,6 @@ button, input {
 }
 
 .card-blurb {
-
+  font-size: 0.7em;
+  line-height: 0.7em;
 }
