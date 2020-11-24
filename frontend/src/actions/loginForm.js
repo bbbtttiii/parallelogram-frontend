@@ -4,3 +4,9 @@ export const updateLoginForm = (formData) => {
     formData
   }
 }
+
+export const resetLoginForm = () => {
+  return {
+    type: "CLEAR_CURRENT_USER"
+  }
+}

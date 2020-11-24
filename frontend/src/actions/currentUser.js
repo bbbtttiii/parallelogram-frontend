@@ -1,9 +1,11 @@
+import { resetLoginForm } from './loginForm.js'
+
 // synchronous action creators
 
 export const setCurrentUser = user => {
   return {
     type: 'SET_CURRENT_USER',
-    user: user
+    user
   }
 }
 
@@ -27,11 +29,12 @@ export const login = info => {
       body: JSON.stringify(info)
     })
     .then(r => r.json())
-    .then(user => {
-      if (user.error) {
-        alert(user.error)
+    .then(response => {
+      if (response.error) {
+        alert(response.error)
       } else {
-        dispatch(setCurrentUser(user))
+        dispatch(setCurrentUser(response.data))
+        dispatch(resetLoginForm())
       }
     })
     .catch(console.log)
@@ -58,11 +61,11 @@ export const getCurrentUser = () => {
       },
     })
     .then(r => r.json())
-    .then(user => {
-      if (user.error) {
-        alert(user.error)
+    .then(response => {
+      if (response.error) {
+        alert(response.error)
       } else {
-        dispatch(setCurrentUser(user))
+        dispatch(setCurrentUser(response.data))
       }
     })
     .catch(console.log)

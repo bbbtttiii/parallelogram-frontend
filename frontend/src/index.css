@@ -13,3 +13,10 @@ code {
     monospace;
 }
 
+.Nav {
+  background-color: lightblue;
+}
+
+.Main {
+  background-color: lightgray;
+}

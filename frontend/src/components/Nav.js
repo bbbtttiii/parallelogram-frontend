@@ -6,6 +6,7 @@ import Logout from './Logout.js';
 const Nav = ({ currentUser }) => {
   return (
     <div className="Nav">
+      {currentUser ? <strong>Logged in as {currentUser.attributes.name}</strong> : ""}
       {currentUser ? <Logout /> : <Login />}
     </div>
   )
