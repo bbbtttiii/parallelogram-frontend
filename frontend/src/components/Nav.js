@@ -7,7 +7,8 @@ const Nav = ({ currentUser }) => {
   return (
     <div className="Nav">
       {currentUser ? <strong>Hi {currentUser.attributes.username}</strong> : ""}
-      {currentUser ? <Logout /> : <Login />}
+      <button>Log In</button> or <button>Sign Up</button>
+      {/* {currentUser ? <Logout /> : <Login />} */}
     </div>
   )
 }
