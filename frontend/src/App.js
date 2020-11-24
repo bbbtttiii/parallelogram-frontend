@@ -7,7 +7,7 @@ import Main from './components/Main.js';
 import Login from './components/Login.js';
 import Signup from './components/Signup.js';
 import Logout from './components/Logout.js';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { Route, Switch, withRouter } from 'react-router-dom';
 
 class App extends React.Component {
 
@@ -18,15 +18,14 @@ class App extends React.Component {
   render() {
     const { loggedIn } = this.props
     return (
-      <Router>
         <div>
-          <Nav />
-          <Main />
-          
-          <Route exact path='/login' component={Login} />
-          <Route exact path='/signup' component={Signup} />
+            <Nav />
+            <Main />
+            
+            <Route path='/login' component={Login} />
+            <Route path='/signup' component={Signup} />
+            {/* <Route path='/' component={} /> */}
         </div>
-      </Router>
     );
   }
 }
@@ -37,4 +36,4 @@ const mapStatetoProps = state => {
   })
 }
 
-export default connect(mapStatetoProps, {getCurrentUser})(App);
+export default withRouter(connect(mapStatetoProps, {getCurrentUser})(App));
