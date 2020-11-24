@@ -44,13 +44,16 @@ export const login = info => {
 
 export const signup = info => {
   return dispatch => {
+    const userInfo = {
+      user: info
+    }
     return fetch('http://localhost:3001/api/v1/signup', {
       credentials: "include",
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify(info)
+      body: JSON.stringify(userInfo)
     })
     .then(r => r.json())
     .then(response => {

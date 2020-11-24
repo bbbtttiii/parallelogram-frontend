@@ -36,7 +36,7 @@ const Signup = ({ signupFormData, updateSignupForm, signup }) => {
         name="password"
         value={signupFormData.password}
         onChange={handleInputChange} />
-      <input type="submit" value="Log In"/>
+      <input type="submit" value="Sign Up"/>
     </form>
   )
 }
