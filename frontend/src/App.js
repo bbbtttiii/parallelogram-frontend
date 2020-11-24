@@ -3,6 +3,7 @@ import './App.css';
 import { connect } from 'react-redux';
 import { getCurrentUser } from './actions/currentUser.js'
 import Nav from './components/Nav.js'
+import Main from './components/Main.js'
 
 class App extends React.Component {
 
@@ -12,7 +13,10 @@ class App extends React.Component {
 
   render() {
     return (
-      <Nav />
+      <div className="App">
+        <Nav />
+        <Main />
+      </div>
     );
   }
 }
