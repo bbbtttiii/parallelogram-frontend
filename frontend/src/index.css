@@ -1,24 +1,58 @@
-body {
-  margin: 0;
-  text-align: center;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: Roboto, sans-serif;
 }
 
 .Nav {
-  margin-left: 10%;
-  margin-right: 10%;
+  height: 80px;
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   background-color: lightblue;
+}
+
+.title {
+  font-size: 1.5em;
+  display: inline;
+  padding: 20px;
+}
+
+.left-nav {
+  margin: 0;
+  grid-column: 1 / 2;
+  justify-self: start;
+  align-self: center;
+  display:inline;
+}
+
+.right-nav {
+  grid-column: 2 / 3;
+  justify-self: end;
+  align-self: center;
+  display: inline;
 }
 
 .Main {
   background-color: lightgray;
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 1rem;
+}
+
+.Main > div {
+  padding: 1.5rem;
 }
