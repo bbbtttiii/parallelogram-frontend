@@ -5,6 +5,7 @@ import { getCurrentUser } from './actions/currentUser.js';
 import Nav from './components/Nav.js';
 import Main from './components/Main.js';
 import Login from './components/Login.js';
+import Signup from './components/Signup.js';
 import Logout from './components/Logout.js';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
@@ -22,6 +23,7 @@ class App extends React.Component {
           <Main />
 
           <Route exact path='/login' component={Login} />
+          <Route exact path='/signup' component={Signup} />
         </div>
       </Router>
     );
