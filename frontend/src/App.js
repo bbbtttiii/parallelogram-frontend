@@ -22,8 +22,6 @@ class App extends React.Component {
             <Nav />
             <Main />
             
-            <Route path='/login' component={Login} />
-            <Route path='/signup' component={Signup} />
             {/* <Route path='/' component={} /> */}
         </div>
     );

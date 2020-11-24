@@ -3,13 +3,15 @@ import { connect } from 'react-redux';
 import Login from './Login.js';
 import Logout from './Logout.js';
 import Signup from './Signup.js';
-import { Link , Switch} from 'react-router-dom';
+import { Route, Link, NavLink, Switch} from 'react-router-dom';
 
 const Nav = ({ currentUser, loggedIn }) => {
   return (
     <div className="Nav">
         <span className="left-nav">
+        <NavLink to='/'>
           <h1 className="title">Parallelogram</h1>
+        </NavLink>
           Link - Link - Link - Link
         </span>
         <span className="right-nav">

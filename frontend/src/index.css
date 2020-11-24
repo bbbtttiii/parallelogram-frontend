@@ -53,7 +53,7 @@ input[type=reset]:hover {
 
 .left-nav {
   margin: 0;
-  flex: 1 1 150px;
+  flex: 1 1 300px;
   display:inline;
 }
 
@@ -61,20 +61,32 @@ input[type=reset]:hover {
   display: inline;
 }
 
-/* Main properties will be moved inside a new component called Grid  */
-.Grid {
+.Main {
   background-color: lightgray;
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.Grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   grid-gap: 2rem;
 }
 
 .Grid > div {
   border: 1px solid black;
   /* padding: 1.5rem; */
+}
+
+.Main form {
+  padding: 10px;
+  text-align: center;
+}
+
+.Main form input {
+  display: block;
+  margin: 0 auto;
 }
 
 /* button, input {
