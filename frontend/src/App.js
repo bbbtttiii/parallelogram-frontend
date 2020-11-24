@@ -16,13 +16,13 @@ class App extends React.Component {
   }
 
   render() {
+    const { loggedIn } = this.props
     return (
       <Router>
-        <div className="App">
+        <div>
           <Nav />
           <Main />
-          <Logout />
-
+          
           <Route exact path='/login' component={Login} />
           <Route exact path='/signup' component={Signup} />
         </div>
@@ -31,4 +31,10 @@ class App extends React.Component {
   }
 }
 
-export default connect(null, {getCurrentUser})(App);
+const mapStatetoProps = state => {
+  return ({
+    loggedIn: !!state.currentUser
+  })
+}
+
+export default connect(mapStatetoProps, {getCurrentUser})(App);

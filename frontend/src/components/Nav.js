@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import Login from './Login.js';
 import Logout from './Logout.js';
+import Signup from './Signup.js';
 
 const Nav = ({ currentUser }) => {
   return (
@@ -11,8 +12,12 @@ const Nav = ({ currentUser }) => {
         Link - Link - Link - Link
       </span>
       <span className="right-nav">
+        {/* if logged out, show login/signup buttons*/}
+        {/* {if logged in, show favorites/logout buttons} */}
+        {currentUser ? <> <Pinned/> <Logout /> </> : <> <Login /> <Signup /> </> }
+        {/* <Route exact path='/' render{() => loggedIn ? <LOGGEDINCOMPONENTS/> : <NOTLOGGEDINCOMPONENTS/>} /> */}
       </span>
-      {currentUser ? <strong>Hi {currentUser.attributes.username}</strong> : ""}
+      {/* {currentUser ? <strong>Hi {currentUser.attributes.username}</strong> : ""} */}
       <button>Log In</button> or <button>Sign Up</button>
       {/* {currentUser ? <Logout /> : <Login />} */}
     </div>
@@ -21,7 +26,8 @@ const Nav = ({ currentUser }) => {
 
 const mapStateToProps = ({ currentUser }) => {
   return {
-    currentUser
+    currentUser,
+    loggedIn: !!currentUser
   }
 }
 
