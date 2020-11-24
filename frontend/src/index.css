@@ -62,7 +62,7 @@ input[type=reset]:hover {
 }
 
 /* Main properties will be moved inside a new component called Grid  */
-.Main {
+.Grid {
   background-color: lightgray;
   width: 90%;
   max-width: 1200px;
@@ -72,7 +72,7 @@ input[type=reset]:hover {
   grid-gap: 2rem;
 }
 
-.Main > div {
+.Grid > div {
   border: 1px solid black;
   /* padding: 1.5rem; */
 }
