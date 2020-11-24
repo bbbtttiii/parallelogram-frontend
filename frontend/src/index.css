@@ -23,6 +23,20 @@ html, body {
   align-items: center;
 }
 
+.Nav a {
+  text-decoration: none;
+  border: 1px solid black;
+  color: black;
+  padding: 0 3px 0;
+}
+
+.Nav a:hover {
+  text-decoration: none;
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+}
+
 .title {
   font-size: 2em;
   display: inline;
