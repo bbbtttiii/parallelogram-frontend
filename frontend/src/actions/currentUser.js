@@ -19,7 +19,7 @@ export const clearCurrentUser = () => {
 
 // asynchronous action creators
 
-export const login = info => {
+export const login = (info, history) => {
   return dispatch => {
     return fetch('http://localhost:3001/api/v1/login', {
       credentials: "include",
@@ -36,13 +36,14 @@ export const login = info => {
       } else {
         dispatch(setCurrentUser(response.data))
         dispatch(resetLoginForm())
+        history.push('/')
       }
     })
     .catch(console.log)
   }
 }
 
-export const signup = info => {
+export const signup = (info, history) => {
   return dispatch => {
     const userInfo = {
       user: info
@@ -62,6 +63,7 @@ export const signup = info => {
       } else {
         dispatch(setCurrentUser(response.data))
         dispatch(resetSignupForm())
+        history.push('/')
       }
     })
     .catch(console.log)

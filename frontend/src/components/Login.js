@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { updateLoginForm } from '../actions/loginForm.js';
 import { login } from '../actions/currentUser.js';
 
-const Login = ({ loginFormData, updateLoginForm, login }) => {
+const Login = ({ loginFormData, updateLoginForm, login, history }) => {
 
   const handleInputChange = event => {
     const { name, value } = event.target
@@ -20,12 +20,14 @@ const Login = ({ loginFormData, updateLoginForm, login }) => {
     <form onSubmit={handleOnSubmit}>
       <input
         type="text"
+        class="input"
         placeholder="username"
         name="username"
         value={loginFormData.username}
         onChange={handleInputChange} />
       <input
         type="text"
+        class="input"
         placeholder="password"
         name="password"
         value={loginFormData.password}
