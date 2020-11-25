@@ -11,6 +11,7 @@ const Main = () => {
         <Route exact path='/' component={Grid} />
         <Route exact path='/login' component={Login} />
         <Route exact path='/signup' component={Signup} />
+        <div className="footer">footer</div>
     </div>
   )
 }
