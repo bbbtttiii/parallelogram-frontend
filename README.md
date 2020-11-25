@@ -1,9 +1,14 @@
 # Parallelogram
-Hello
+A collection of curated, multi-disciplinary articles from topics such as nature, psychology, philosophy, and more.
 
 ## Getting Started
 
-- Getting Started
+- Clone
+- In `backend`:
+```rails db:migrate rails db:seed rails s```
+- In `frontend`:
+```npm install npm start```
+- Head to `localhost:3000` in your browser
 
 ## Features
 
@@ -11,7 +16,7 @@ Hello
 
 ## Contributing
 
-Feel free to report a bug or create a pull request if you have any ideas for expansion or improvement.
+Feel free to report a bug or create a pull request if you have any ideas for expansion or improvement!
 
 ## Authors
 

@@ -5,7 +5,7 @@ const Card = () => {
     <div className="Article">
       <div className="article-title">Article 1</div>
       <div className="article-photo">Image</div>
-      <div className="article-details">By Haha Haha - Philosophy</div>
+      <div className="article-details">By Asdf JKL - Philosophy</div>
       <div className="article-content">
         Warm-heartedness reinforces our self-confidence giving us not a blind confidence, but a sense of confidence based on reason. When you have that you can act transparently, with nothing to hide! Likewise, if you are honest, the community will trust you. Trust brings friendship, as a result of which you can always feel happy. Whether you look to the right or the left, you will always be able to smile.
         The practice of patience guards us against losing our presence of mind. It enables us to remain undisturbed, even when the situation is really difficult. It gives us a certain amount of inner peace, which allows us some self-control, so that we can choose to respond to situations in an appropriate and compassionate manner, rather than being driven by our disturbing emotions.
