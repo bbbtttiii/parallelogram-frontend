@@ -20,10 +20,12 @@ const Nav = ({ currentUser, loggedIn }) => {
           <NavLink to='/tag1'>Link</NavLink>
         </div>
         <div className="right-nav">
-          {currentUser ? <strong>Hi {currentUser.attributes.username}</strong> : null}
-          {loggedIn ?
-            <> <Logout /> </> :
-            <> <Link to='/login'>Log In</Link> or <Link to ='/signup'>Sign Up</Link> </>
+          {currentUser
+            ? <strong>Hi {currentUser.attributes.username}</strong>
+            : null}
+          {loggedIn
+            ? <> <Logout /> </>
+            : <> <Link to='/login'>Log In</Link> or <Link to ='/signup'>Sign Up</Link> </>
           }
         </div>
     </div>
