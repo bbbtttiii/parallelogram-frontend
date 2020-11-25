@@ -5,9 +5,16 @@ A collection of curated, multi-disciplinary articles from topics such as nature,
 
 - Clone
 - In `backend`:
-```rails db:migrate rails db:seed rails s```
+```
+rails db:migrate
+rails db:seed
+rails s
+```
 - In `frontend`:
-```npm install npm start```
+```
+npm install
+npm start
+```
 - Head to `localhost:3000` in your browser
 
 ## Features
