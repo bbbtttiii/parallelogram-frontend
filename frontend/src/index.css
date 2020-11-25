@@ -9,7 +9,6 @@ html, body {
   padding: 0;
   height: 100%;
   width: 100%;
-  font-family: Roboto, sans-serif;
 }
 
 .Nav {
@@ -21,13 +20,13 @@ html, body {
   grid-template-columns: 1fr 1fr 1fr;
   background-color: lightblue;
   align-items: center;
+  font-family: Roboto, sans-serif;
 }
 
-.Nav a,
+.left-nav a, .right-nav a,
 input[type=button],
 input[type=submit],
 input[type=reset] {
-  /* font-size: 1em; */
   text-decoration: none;
   border: 1px solid black;
   background-color: transparent;
@@ -35,7 +34,7 @@ input[type=reset] {
   padding: 0 3px 0;
 }
 
-.Nav a:hover,
+.left-nav a:hover, right-nav a:hover,
 input[type=button]:hover,
 input[type=submit]:hover,
 input[type=reset]:hover {
@@ -45,10 +44,17 @@ input[type=reset]:hover {
   color: white;
 }
 
-.title {
-  font-size: 2em;
+/* .input input[type=text] {
+  margin-bottom: 5px;
+} */
+
+.title a{
+  font-size: 1em;
   display: inline;
   padding-right: 20px;
+  text-decoration: none;
+  color:black;
+  font-family: Roboto, sans-serif;
 }
 
 .left-nav {
@@ -139,4 +145,5 @@ input[type=reset]:hover {
 .card-blurb {
   margin-top: 0.5em;
   line-height: 1em;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
