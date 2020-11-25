@@ -13,7 +13,7 @@ const Login = ({ loginFormData, updateLoginForm, login, history }) => {
 
   const handleOnSubmit = event => {
     event.preventDefault();
-    login(loginFormData)
+    login(loginFormData, history)
   }
 
   return (
@@ -21,9 +21,9 @@ const Login = ({ loginFormData, updateLoginForm, login, history }) => {
       <input
         type="text"
         class="input"
-        placeholder="username"
-        name="username"
-        value={loginFormData.username}
+        placeholder="email"
+        name="email"
+        value={loginFormData.email}
         onChange={handleInputChange} />
       <input
         type="text"
