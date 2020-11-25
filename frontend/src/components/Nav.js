@@ -21,7 +21,7 @@ const Nav = ({ currentUser, loggedIn }) => {
         </div>
         <div className="right-nav">
           {currentUser
-            ? <strong>Hi {currentUser.attributes.username}</strong>
+            ? <strong>Hi, {currentUser.attributes.username}</strong>
             : null}
           {loggedIn
             ? <> <Logout /> </>

@@ -21,16 +21,16 @@ const Signup = ({ signupFormData, updateSignupForm, signup, history }) => {
       <input
         type="text"
         class="input"
-        placeholder="email"
-        name="email"
-        value={signupFormData.email}
+        placeholder="desired username"
+        name="username"
+        value={signupFormData.username}
         onChange={handleInputChange} />
       <input
         type="text"
         class="input"
-        placeholder="username"
-        name="username"
-        value={signupFormData.username}
+        placeholder="email"
+        name="email"
+        value={signupFormData.email}
         onChange={handleInputChange} />
       <input
         type="text"
