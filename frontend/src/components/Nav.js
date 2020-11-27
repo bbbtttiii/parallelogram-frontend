@@ -14,10 +14,10 @@ const Nav = ({ currentUser, loggedIn }) => {
           </NavLink>
         </div>
         <div className="left-nav">
-          <NavLink to='/tag1'>Link</NavLink>
-          <NavLink to='/tag1'>Link</NavLink>
-          <NavLink to='/tag1'>Link</NavLink>
-          <NavLink to='/tag1'>Link</NavLink>
+          <NavLink to='/tag1'>Nature</NavLink>
+          <NavLink to='/tag1'>Technology</NavLink>
+          <NavLink to='/tag1'>Psychology</NavLink>
+          <NavLink to='/tag1'>Philosophy</NavLink>
         </div>
         <div className="right-nav">
           {currentUser
@@ -25,7 +25,7 @@ const Nav = ({ currentUser, loggedIn }) => {
             : null}
           {loggedIn
             ? <> <Logout /> </>
-            : <> <Link to='/login'>Log In</Link> or <Link to ='/signup'>Sign Up</Link> </>
+            : <> <NavLink to='/login'>Log In</NavLink><NavLink to ='/signup'>Sign Up</NavLink> </>
           }
         </div>
     </div>

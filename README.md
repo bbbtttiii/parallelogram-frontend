@@ -4,13 +4,13 @@ A collection of curated, multi-disciplinary articles from topics such as nature,
 ## Getting Started
 
 - Clone
-- In `backend`:
+- In `backend`
 ```
 rails db:migrate
 rails db:seed
 rails s
 ```
-- In `frontend`:
+- In `frontend`
 ```
 npm install
 npm start

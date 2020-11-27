@@ -13,6 +13,7 @@ const Main = () => {
         <Route exact path='/login' component={Login} />
         <Route exact path='/signup' component={Signup} />
         <Route exact path='/article' component={Article} />
+        {/* <Route exact path='/tag' component={} /> */}
         <div className="footer">footer</div>
     </div>
   )

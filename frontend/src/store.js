@@ -8,13 +8,14 @@ import thunk from 'redux-thunk';
 
 const reducer = combineReducers({
   user: usersReducer,
-  currentUser,
-  loginForm,
-  favorites,
-  signupForm
+  currentUser: currentUser,
+  loginForm: loginForm,
+  favorites: favorites,
+  signupForm: signupForm
 });
 
 const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+
 const store = createStore(reducer, composeEnhancer(applyMiddleware(thunk)));
 
 export default store;
