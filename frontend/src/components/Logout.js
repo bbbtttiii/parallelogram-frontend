@@ -7,7 +7,7 @@ const Logout = ({ logout }) => {
     <form onSubmit={logout}>
       <input 
         type="submit"
-        class="inout"
+        className="input"
         value="Log Out"/>
     </form>
   )
