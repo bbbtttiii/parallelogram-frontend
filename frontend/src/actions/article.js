@@ -21,7 +21,7 @@ export const getArticles = () => {
       if (response.error) {
         alert(response.error)
       } else {
-        dispatch(setCurrentUser(response.data))
+        dispatch(showArticles(response.data))
       }
     })
     .catch(console.log)

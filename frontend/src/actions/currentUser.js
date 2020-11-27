@@ -12,7 +12,7 @@ export const setCurrentUser = user => {
 
 export const clearCurrentUser = () => {
   return {
-    type: "CLEAR_CURRENT_USER"
+    type: 'CLEAR_CURRENT_USER'
   }
 }
 
@@ -49,7 +49,7 @@ export const signup = (info, history) => {
       user: info
     }
     return fetch('http://localhost:3001/api/v1/signup', {
-      credentials: "include",
+      credentials: 'include',
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -74,8 +74,8 @@ export const logout = () => {
   return (dispatch) => {
     dispatch(clearCurrentUser())
     return fetch('http://localhost:3001/api/v1/logout', {
-      credentials: "include",
-      method: "DELETE"
+      credentials: 'include',
+      method: 'DELETE'
     })
   }
 }

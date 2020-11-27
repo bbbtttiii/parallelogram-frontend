@@ -1,8 +1,14 @@
 /* eslint-disable import/no-anonymous-default-export */
 
-export default (state = [], action) => {
+const initialState = [];
+
+export default (state = initialState, action) => {
   switch (action.type) {
-      default:
-          return state;
+    case 'GET_ARTICLES':
+      return state.articles
+    case 'GET_ARTICLE':
+      return state.articles.filter(article => article.id === action.articleId)
+    default:
+      return state;
   }
 }
