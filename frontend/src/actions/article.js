@@ -1,10 +1,22 @@
+import article from "../reducers/article"
+
 //sync
-export const showArticles = () => {
+export const showArticles = (title, author, content, tag, summary) => {
+  const data = {
+    title, 
+    author,
+    content,
+    tag,
+    summary
+    }
+  console.log(data)
   return {
-    type: 'GET_ARTICLES',
+    type: 'ADD_ARTICLES',
+    data
   }
 }
 
+// dispatch({ type: 'ADD_CATS', cats: responseJSON.images })
 
 //async
 export const getArticles = () => {

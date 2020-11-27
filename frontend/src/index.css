@@ -19,7 +19,7 @@ html, body {
   display: flex;
   grid-template-columns: 1fr 1fr 1fr;
   border-bottom: 1px solid #999;
-  align-items: center;
+  align-items: baseline;
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 

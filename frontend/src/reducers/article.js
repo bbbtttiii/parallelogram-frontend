@@ -1,12 +1,18 @@
 /* eslint-disable import/no-anonymous-default-export */
 
-const initialState = [];
+const initialState = {
+  title: '',
+  author: '',
+  summary: '',
+  content: '',
+  tag: ''
+}
 
 export default (state = initialState, action) => {
   switch (action.type) {
-    case 'GET_ARTICLES':
+    case 'ADD_ARTICLES':
       return state.articles
-    case 'GET_ARTICLE':
+    case 'ADD_ARTICLE':
       return state.articles.filter(article => article.id === action.articleId)
     default:
       return state;

@@ -1,4 +1,6 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import { showArticles } from '../actions/article.js'
 import Card from './Card.js';
 
 const Grid = () => {
@@ -16,4 +18,16 @@ const Grid = () => {
   )
 }
 
-export default Grid;
+const mapStateToProps = state => {
+  const { title, author, summary, content, tag } = state.article
+  return {
+    title,
+    author,
+    summary,
+    content,
+    tag
+  }
+}
+
+// export default Grid;
+export default connect(mapStateToProps, { showArticles })(Grid);
