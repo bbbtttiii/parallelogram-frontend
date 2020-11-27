@@ -20,12 +20,12 @@ const Nav = ({ currentUser, loggedIn }) => {
           <NavLink to='/tag1'>Philosophy</NavLink>
         </div>
         <div className="right-nav">
-          {currentUser
+          {/* {currentUser
             ? <strong>Hi, {currentUser.attributes.username}. <br/></strong>
             : null
-          }
+          } */}
           {loggedIn
-            ? <> <NavLink to='/favorites'>Favorites</NavLink> <Logout /> </>
+            ? <> <strong>Hi, {currentUser.attributes.username}.</strong> <NavLink to='/favorites'>Favorites</NavLink> <Logout /> </>
             : <> <NavLink to='/login'>Log In</NavLink><NavLink to ='/signup'>Sign Up</NavLink> </>
           }
         </div>
