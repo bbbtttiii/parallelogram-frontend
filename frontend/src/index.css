@@ -18,7 +18,7 @@ html, body {
   margin: 0 auto;
   display: flex;
   grid-template-columns: 1fr 1fr 1fr;
-  background-color: lightblue;
+  border-bottom: 1px solid #999;
   align-items: center;
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
@@ -32,28 +32,34 @@ input[type=reset] {
   background-color: transparent;
   color: black;
   padding: 0 3px 0;
+  margin: 0 5px 0;
 }
 
-.left-nav a:hover, right-nav a:hover,
-input[type=button]:hover,
-input[type=submit]:hover,
-input[type=reset]:hover {
+.left-nav a:hover, .right-nav a:hover,
+.right-nav input[type=button]:hover,
+.right-nav input[type=submit]:hover,
+.right-nav input[type=reset]:hover {
   text-decoration: none;
   border: 1px solid black;
   background-color: black;
   color: white;
 }
 
-/* .input input[type=text] {
-  margin-bottom: 5px;
-} */
+.input-field {
+  padding: 5px;
+  margin-bottom: 10px;
+}
 
 .title a{
   font-size: 1em;
-  display: inline;
+  display: inline-block;
   padding-right: 20px;
   text-decoration: none;
   color:black;
+}
+
+.title a:hover {
+  text-decoration: underline;
 }
 
 .left-nav {
@@ -67,7 +73,7 @@ input[type=reset]:hover {
 }
 
 .Main {
-  background-color: lightgray;
+  /* background-color: lightgray; */
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
@@ -79,27 +85,40 @@ input[type=reset]:hover {
   grid-gap: 2rem;
 }
 
-.Grid > div {
-  border: 1px solid black;
+/* .Grid > div { */
+  /* border: 1px solid black; */
   /* padding: 1.5rem; */
-}
+/* } */
 
 .footer {
+  border-top: 1px solid #999;
   height: 120px;
-  background-color: lightblue;
+  /* background-color: lightblue; */
   margin-top: 2rem;
   display: flex;
   align-items: center;
 }
 
 .Main form {
-  padding: 10px;
+  padding: 1em;
   text-align: center;
 }
 
 .Main form input {
   display: block;
   margin: 0 auto;
+}
+
+.Main form input[type=submit] {
+  margin-top: 0.5em;
+  font-size: 1em;
+  text-align: center;
+}
+
+.Main form input[type=submit]:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
 }
 
 /* button, input {
@@ -114,7 +133,6 @@ input[type=reset]:hover {
 .card-title {
   line-height: 0.9em;
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
-
 }
 
 .card-title a {
@@ -135,20 +153,22 @@ input[type=reset]:hover {
   margin-bottom: 0.5em;
 }
 
-.card-details {
-  margin: 0;
-  flex: 1 1 200px;
+.card-details, .article-details {
   display:inline;
   font-size: 1em;
 }
 
-.card-details a {
-  background-color: steelblue;
-  color: white;
+.card-details a, .article details a:hover {
   border-radius: 10px;
+  border: 1px black solid;
   margin-left: 5px;
   padding: 0 5px 0;
   text-decoration: none;
+}
+
+.card-details a:hover {
+  background-color: black;
+  color: white;
 }
 
 .card-summary {
@@ -189,6 +209,11 @@ input[type=reset]:hover {
 }
 
 .article-content {
+  margin-top: 1em;
   font-size: 1.2em;
   line-height: 1.5em;
+}
+
+a:visited {
+  color: black;
 }
