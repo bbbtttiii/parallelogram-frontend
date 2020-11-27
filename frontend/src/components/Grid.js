@@ -1,33 +1,34 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { showArticles } from '../actions/article.js'
+// import { GridContent } from './components/GridContent.js';
+import { showArticles } from '../actions/article.js';
+import { NavLink } from 'react-router-dom';
 import Card from './Card.js';
 
 const Grid = () => {
   return (
-    <div className="Grid">
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-    </div>
+    <>
+      {/* <GridContent /> */}
+      <div className="Grid">
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+      </div>
+    </>
   )
 }
 
 const mapStateToProps = state => {
-  const { title, author, summary, content, tag } = state.article
+  // const { title, author, summary, content, tag } = state.article
   return {
-    title,
-    author,
-    summary,
-    content,
-    tag
+    title: state.title,
   }
 }
 
 // export default Grid;
-export default connect(mapStateToProps, { showArticles })(Grid);
+export default connect(mapStateToProps)(Grid);

@@ -1,5 +1,6 @@
 import React from 'react';
 import Grid from './Grid';
+// import GridContent from './GridContent';
 import Login from './Login';
 import Signup from './Signup';
 import Article from './Article';

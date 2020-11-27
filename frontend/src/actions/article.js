@@ -1,18 +1,11 @@
-import article from "../reducers/article"
+// import article from "../reducers/article"
 
 //sync
-export const showArticles = (title, author, content, tag, summary) => {
-  const data = {
-    title, 
-    author,
-    content,
-    tag,
-    summary
-    }
-  console.log(data)
+export const showArticles = articles => {
+  console.log(articles)
   return {
     type: 'ADD_ARTICLES',
-    data
+    articles
   }
 }
 
@@ -22,7 +15,7 @@ export const showArticles = (title, author, content, tag, summary) => {
 export const getArticles = () => {
   return dispatch => {
     return fetch('http://localhost:3001/api/v1/get_articles', {
-      // credentials: "include",
+      credentials: "include",
       method: 'GET',
       headers: {
         'Content-Type': 'application/json'
