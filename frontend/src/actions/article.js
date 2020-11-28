@@ -1,15 +1,21 @@
 // import article from "../reducers/article"
 
 //sync
-export const showArticles = articleList => {
-  console.log(articleList)
+export const showArticles = articles => {
+  console.log("in action creator", articles)
   return {
     type: 'ADD_ARTICLES',
-    articleList
+    articles
   }
 }
 
-// dispatch({ type: 'ADD_CATS', cats: responseJSON.images })
+export const showArticle = article => {
+  console.log(article)
+  return {
+    type: 'ADD_ARTICLE',
+    article
+  }
+}
 
 //async
 export const getArticles = () => {

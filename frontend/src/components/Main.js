@@ -2,6 +2,7 @@ import React from 'react';
 import Grid from './Grid';
 // import GridContent from './GridContent';
 import Login from './Login';
+import Test from './Test'
 import Signup from './Signup';
 import Article from './Article';
 import { connect } from 'react-redux';
@@ -10,6 +11,7 @@ import { Switch, Route, withRouter } from 'react-router-dom';
 const Main = () => {
   return (
     <div className="Main">
+        <Test />
         <Route exact path='/' component={Grid} />
         <Route exact path='/login' component={Login} />
         <Route exact path='/signup' component={Signup} />
