@@ -4,26 +4,33 @@ import { showArticles, getArticles } from '../actions/article.js';
 import { NavLink } from 'react-router-dom';
 import Card from './Card.js';
 import article from '../reducers/article.js';
+import Test from './Test.js'
 
-const Grid = ({ title, author, content, summary, tag, showArticles, article, articles }) => {
+const Grid = props => {
   return (
     <>
       <div className="Grid">
-      {/* <p>{article.title}</p> */}
+        {/* <Test /> */}
+        {/* {props.articles.map(article => {
+          return (
+            <Card key={article.id} />
+            )
+          })} */}
+          {/* <Card />
           <Card />
           <Card />
           <Card />
           <Card />
           <Card />
-          <Card />
-          <Card />
+          <Card /> */}
+          
       </div>
     </>
   )
 }
 
+// const { articles } = this.props.articles
 const mapStateToProps = state => {
-  // const { title, author, summary, content, tag } = state.article
   return {
     articles: state.article.articles
   }

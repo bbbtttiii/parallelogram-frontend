@@ -1,6 +1,5 @@
 import React from 'react';
 import Grid from './Grid';
-// import GridContent from './GridContent';
 import Login from './Login';
 import Test from './Test'
 import Signup from './Signup';

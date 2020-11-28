@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-const Card = () => {
+const Article = () => {
   return (
     <div className="Article">
       <div className="article-title">Article 1</div>
@@ -17,4 +17,4 @@ const Card = () => {
   )
 }
 
-export default Card;
+export default Article;
