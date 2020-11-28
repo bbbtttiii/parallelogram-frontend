@@ -150,10 +150,14 @@ input[type=reset] {
 }
 
 .card-photo {
+  margin-bottom: 0.5em;
+}
+
+.card-photo img {
   width: 100%;
   height: 250px;
-  background-color: lightsalmon;
-  margin-bottom: 0.5em;
+  /* background-color: lightsalmon; */
+  object-fit: cover;
 }
 
 .card-details, .article-details {
