@@ -1,5 +1,5 @@
 # Parallelogram
-A collection of curated, multi-disciplinary articles from topics such as nature, psychology, philosophy, and more. Built with a React/Redux frontend and Rails API backend.
+A collection of curated, multi-disciplinary articles from topics such as natural science, technology, psychology, philosophy, and more. Built with a React/Redux frontend and Rails API backend.
 
 ## Getting Started
 
