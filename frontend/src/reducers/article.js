@@ -1,18 +1,21 @@
 /* eslint-disable import/no-anonymous-default-export */
 
-const initialState = [
-  {
-    title: '',
-    author: '',
-    summary: '',
-    content: '',
-    tag: ''
-  }
-]
+// const initialState = [
+//   {
+//     title: '',
+//     author: '',
+//     summary: '',
+//     content: '',
+//     tag: ''
+//   }
+// ]
+
+const initialState = {}
 
 export default (state = initialState, action) => {
   switch (action.type) {
     case 'ADD_ARTICLES':
+      return {articles: action.articleList}
       // return [{
       //   title: action.title,
       //   author: action.author,
@@ -20,7 +23,6 @@ export default (state = initialState, action) => {
       //   contenet: action.content,
       //   tag: action.tag
       // }]
-      return state.articles
     case 'ADD_ARTICLE':
       return state.articles.filter(article => article.id === action.articleId)
     default:

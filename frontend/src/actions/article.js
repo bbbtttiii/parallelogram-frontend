@@ -1,11 +1,11 @@
 // import article from "../reducers/article"
 
 //sync
-export const showArticles = articles => {
-  console.log(articles)
+export const showArticles = articleList => {
+  console.log(articleList)
   return {
     type: 'ADD_ARTICLES',
-    articles
+    articleList
   }
 }
 

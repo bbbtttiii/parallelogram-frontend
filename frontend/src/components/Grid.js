@@ -5,12 +5,11 @@ import { showArticles } from '../actions/article.js';
 import { NavLink } from 'react-router-dom';
 import Card from './Card.js';
 
-const Grid = () => {
+const Grid = ({ title, author, content, summary, tag, showArticles }) => {
   return (
     <>
-      {/* <GridContent /> */}
       <div className="Grid">
-          <Card />
+          {/* <GridContent /> */}
           <Card />
           <Card />
           <Card />
@@ -31,4 +30,4 @@ const mapStateToProps = state => {
 }
 
 // export default Grid;
-export default connect(mapStateToProps)(Grid);
+export default connect(mapStateToProps, { showArticles })(Grid);
