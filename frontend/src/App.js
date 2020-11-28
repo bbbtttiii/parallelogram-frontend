@@ -30,7 +30,7 @@ class App extends React.Component {
 const mapStatetoProps = state => {
   return ({
     loggedIn: !!state.currentUser,
-    articles: state.articles
+    // articles: state.articles
   })
 }
 

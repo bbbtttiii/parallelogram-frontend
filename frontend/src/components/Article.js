@@ -17,4 +17,11 @@ const Article = () => {
   )
 }
 
-export default Article;
+const mapStateToProps = state => {
+  // const { title, author, summary, content, tag } = state.article
+  return {
+    articles: state.article.articles
+  }
+}
+
+export default connect(mapStateToProps)(Article);

@@ -8,8 +8,8 @@ const Card = article => {
     <div className="Card">
       <h1 className="card-title"><NavLink to='/article'>{article.title}</NavLink></h1>
       <div className="card-photo"><NavLink to ='/article'>Photo</NavLink></div>
-      <div className="card-details">{article.author}<NavLink to='/tag'>{article.tag}</NavLink></div>
-      <div className="card-summary">{article.content}</div>
+      <div className="card-details">By {article.author}<NavLink to='/tag'>{article.tag}</NavLink></div>
+      <div className="card-summary">{article.summary}</div>
     </div>
   )
 }
@@ -28,5 +28,3 @@ export default connect(mapStateToProps)(Card);
 
 // let articleId = {article.id}
 // <NavLink to={`/${articleId}`} className="nav-link">TEXT</NavLink>
-
-

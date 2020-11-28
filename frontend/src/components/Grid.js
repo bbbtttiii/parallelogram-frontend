@@ -10,7 +10,7 @@ const Grid = props => {
   return (
     <>
       <div className="Grid">
-        {/* <Test /> */}
+        <Test />
         {/* {props.articles.map(article => {
           return (
             <Card key={article.id} />

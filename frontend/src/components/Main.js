@@ -10,7 +10,7 @@ import { Switch, Route, withRouter } from 'react-router-dom';
 const Main = () => {
   return (
     <div className="Main">
-        <Test />
+        {/* <Test /> */}
         <Route exact path='/' component={Grid} />
         <Route exact path='/login' component={Login} />
         <Route exact path='/signup' component={Signup} />
