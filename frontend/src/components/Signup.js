@@ -34,7 +34,7 @@ const Signup = ({ signupFormData, updateSignupForm, signup, history }) => {
         onChange={handleInputChange} />
       <input
         type="password"
-        autocomplete="off"
+        autoComplete="off"
         class="input-field"
         placeholder="password"
         name="password"

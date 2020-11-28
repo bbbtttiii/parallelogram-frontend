@@ -27,7 +27,7 @@ const Login = ({ loginFormData, updateLoginForm, login, history }) => {
         onChange={handleInputChange} />
       <input
         type="password"
-        autocomplete="off"
+        autoComplete="off"
         className="input-field"
         placeholder="password"
         name="password"
