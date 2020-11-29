@@ -20,11 +20,11 @@ class App extends React.Component {
 
   render() {
     return (
-        <div>
-            <Nav />
-            <Main />
-            <Footer />
-        </div>
+      <div>
+        <Nav />
+        <Main />
+        <Footer />
+      </div>
     );
   }
 }
