@@ -20,7 +20,6 @@ const ArticleContent = props => {
   // const findArticle = () => {
   //   return props.articles.find(a => a.id === props.id)
   // }
-
   
   return (
     <div className="Article">
@@ -28,10 +27,10 @@ const ArticleContent = props => {
         {article && article.title}
       </div>
       <div className="article-photo">
-        <img src={`${article && article.image_url}`} alt="article" />
+        <img src={`${article && article.image_url}`} alt="Parallelogram" />
       </div>
       <div className="article-details">
-        {article && article.author} - {article && article.tag}
+        {article && article.author} — {article && article.tag}
       </div>
       <div className="article-content">
         {article && article.content}
