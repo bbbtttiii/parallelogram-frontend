@@ -8,6 +8,7 @@ const GridContent = props => {
   const articleCards = props.articles.map(a =>
     <Card
       key={a.id}
+      id={a.attributes.id}
       title={a.attributes.title}
       author={a.attributes.author}
       summary={a.attributes.summary}

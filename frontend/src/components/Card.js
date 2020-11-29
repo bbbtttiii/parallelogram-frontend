@@ -6,16 +6,25 @@ import { NavLink } from 'react-router-dom';
 const Card = article => {
   return (
     <div className="Card">
-      <h1 className="card-title"><NavLink to='/article'>{article.title}</NavLink></h1>
-      <div className="card-photo"><NavLink to ='/article'> <img src={`${article.image_url}`} alt="article"/> </NavLink></div>
-      <div className="card-details">By {article.author}<NavLink to='/tag'>{article.tag}</NavLink></div>
-      <div className="card-summary">{article.summary}</div>
+      <div className="card-photo">
+        <NavLink to ={`${article.id}`}>
+          <img src={`${article.image_url}`} alt="article" />
+        </NavLink>
+      </div>
+      <h1 className="card-title">
+        <NavLink to='/article'>{article.title}</NavLink>
+      </h1>
+      <div className="card-details">
+        By {article.author}<NavLink to='/tag'>{article.tag}</NavLink>
+      </div>
+      <div className="card-summary">
+        {article.summary}
+      </div>
     </div>
   )
 }
 
 const mapStateToProps = state => {
-  // const { title, author, summary, content, tag } = state.article
   return {
     articles: state.article.articles
   }
@@ -28,4 +37,3 @@ export default connect(mapStateToProps)(Card);
 
 // let articleId = {article.id}
 // <NavLink to={`/${articleId}`} className="nav-link">TEXT</NavLink>
-

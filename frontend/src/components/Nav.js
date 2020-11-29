@@ -14,10 +14,10 @@ const Nav = ({ currentUser, loggedIn }) => {
           </NavLink>
         </div>
         <div className="left-nav">
-          <NavLink to='/tag1'>Nature</NavLink>
-          <NavLink to='/tag1'>Technology</NavLink>
-          <NavLink to='/tag1'>Psychology</NavLink>
-          <NavLink to='/tag1'>Philosophy</NavLink>
+          <NavLink to='/nature'>Nature</NavLink>
+          <NavLink to='/technology'>Technology</NavLink>
+          <NavLink to='/psychology'>Psychology</NavLink>
+          <NavLink to='/philosophy'>Philosophy</NavLink>
         </div>
         <div className="right-nav">
           {loggedIn
@@ -37,4 +37,3 @@ const mapStateToProps = ({ currentUser }) => {
 }
 
 export default connect(mapStateToProps)(Nav);
-
