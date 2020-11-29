@@ -27,6 +27,7 @@ html, body {
 input[type=button],
 input[type=submit],
 input[type=reset] {
+  letter-spacing: 1px;
   text-decoration: none;
   border: 1px solid black;
   background-color: transparent;
@@ -54,6 +55,7 @@ input[type=reset] {
 
 .title a{
   width: 275px;
+  letter-spacing: -1px;
   font-size: 1.2em;
   display: inline-block;
   padding-right: 20px;
@@ -82,7 +84,7 @@ input[type=reset] {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 30px 0 50px;
+  padding: 50px 0 50px;
 }
 
 .Grid {
@@ -142,6 +144,7 @@ input[type=reset] {
 .card-title {
   line-height: 0.9em;
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  margin-bottom: 10px;
 }
 
 .card-title a {
@@ -154,7 +157,7 @@ input[type=reset] {
 }
 
 .card-photo {
-  margin-bottom: 0.5em;
+  margin-bottom: 0.3em;
 }
 
 .card-photo img {
@@ -164,7 +167,7 @@ input[type=reset] {
 }
 
 .card-details, .article-details {
-  display:flex;
+  display: flex;
   justify-content: space-between;
   font-size: 1.2em;
 }
