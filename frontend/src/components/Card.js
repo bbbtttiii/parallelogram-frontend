@@ -15,7 +15,7 @@ const Card = article => {
         <NavLink to='/article'>{article.title}</NavLink>
       </h1>
       <div className="card-details">
-        By {article.author}<NavLink to='/tag'>{article.tag}</NavLink>
+        {article.author}<NavLink to='/tag'>{article.tag}</NavLink>
       </div>
       <div className="card-summary">
         {article.summary}

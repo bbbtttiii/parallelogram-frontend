@@ -12,7 +12,7 @@ const Article = article => {
         <img src={`${article.image_url}`} alt="article" />
       </div>
       <div className="article-details">
-      By {article.author} - {article.tag}
+        {article.author} - {article.tag}
       </div>
       <div className="article-content">
         {article.content}

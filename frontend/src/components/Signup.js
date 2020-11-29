@@ -56,6 +56,4 @@ const mapStateToProps = state => {
   }
 }
 
-// const mapDispatchToProps
-
 export default connect(mapStateToProps, { updateSignupForm, signup })(Signup);

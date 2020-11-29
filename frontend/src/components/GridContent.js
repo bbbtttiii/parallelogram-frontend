@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import Card from './Card.js';
 
 const GridContent = props => {
-  console.log("in test component", props.articles)
+  console.log("in gridcontent", props.articles)
   const articleCards = props.articles.map(a =>
     <Card
       key={a.id}
