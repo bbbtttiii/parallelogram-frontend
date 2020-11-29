@@ -8,8 +8,8 @@ export default (state = initialState, action) => {
   switch (action.type) {
     case 'ADD_ARTICLES':
       return { ...state, articles: action.articles }
-    case 'ADD_ARTICLE':
-      return { ...state, article: action.articleList.filter(a => a.id === action.articleId) }
+    // case 'ADD_ARTICLE':
+    //   return { ...state, articles: action.articles.filter(a => a.id === action.articleId) }
     default:
       return state;
   }

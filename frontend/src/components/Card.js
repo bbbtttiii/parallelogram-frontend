@@ -1,5 +1,5 @@
 import React from 'react';
-import { connect } from 'react-redux';
+// import { connect } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 // import article from '../reducers/article';
 
@@ -12,7 +12,7 @@ const Card = article => {
         </NavLink>
       </div>
       <h1 className="card-title">
-        <NavLink to='/article'>{article.title}</NavLink>
+        <NavLink to={`${article.id}`}>{article.title}</NavLink>
       </h1>
       <div className="card-details">
         {article.author}<NavLink to='/tag'>{article.tag}</NavLink>
@@ -24,13 +24,7 @@ const Card = article => {
   )
 }
 
-const mapStateToProps = state => {
-  return {
-    articles: state.article.articles
-  }
-}
-
-export default connect(mapStateToProps)(Card);
+export default Card;
 
 
 // For dynamic Links:
