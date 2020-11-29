@@ -16,7 +16,6 @@ const Main = article => {
           <Route exact path='/signup' component={Signup} />
           <Route path={`${article.id}`} component={Article} />
           {/* <Route exact path='/tag' component={} /> */}
-          <div className="footer">Parallelogram 2020</div>
         </Switch>
     </div>
   )
