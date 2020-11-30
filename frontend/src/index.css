@@ -88,7 +88,7 @@ a.selected {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 50px 0 50px;
+  padding:10px 0 50px;
 }
 
 .Grid {
@@ -135,6 +135,15 @@ a.selected {
   background-color: pink;
   color: black;
   cursor: pointer;
+}
+
+.Issue {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 1em;
+  margin-left: 1em;
 }
 
 /* button, input {
@@ -203,6 +212,7 @@ a.selected {
   margin-right: 10%;
   display: flex;
   flex-direction: column;
+  padding-top: 10px;
 }
 
 .article-title {

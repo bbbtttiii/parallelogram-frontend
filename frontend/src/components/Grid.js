@@ -5,10 +5,12 @@ import Issue from './Issue.js'
 const Grid = props => {
   return (
     <>
-    {/* <Issue /> */}
-    <div className="Grid">
-      <GridContent history={props.history} location={props.location} match={props.match} />
-    </div>
+      <div className="Issue">
+        <Issue />
+      </div>
+      <div className="Grid">
+        <GridContent history={props.history} location={props.location} match={props.match} />
+      </div>
     </>
   )
 }
