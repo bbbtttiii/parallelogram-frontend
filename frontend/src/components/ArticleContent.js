@@ -3,13 +3,9 @@ import { connect } from 'react-redux';
 // import { render } from 'react-dom';
 // import { NavLink } from 'react-router-dom';
 
-class ArticleContent extends React.Component {
 
-  //using local state for article show page
-  constructor() {
-    super()
-    this.state = {}
-  }
+//make functional
+class ArticleContent extends React.Component {
 
   render() {
 
@@ -20,16 +16,16 @@ class ArticleContent extends React.Component {
     return (
       <div className="Article">
         <div className="article-title">
-          {findArticle().title}
+          {this.props.articles.find(a => a.id === this.props.id) && findArticle().title}
         </div>
         <div className="article-details">
-          {findArticle().author}
+          {this.props.articles.find(a => a.id === this.props.id) && findArticle().author}
         </div>
         <div className="article-photo">
-          <img src={`${findArticle().image_url}`} alt="Parallelogram" />
+          <img src={`${this.props.articles.find(a => a.id === this.props.id) && findArticle().image_url}`} alt="Parallelogram" />
         </div>
         <div className="article-content">
-          {findArticle().content}
+          {this.props.articles.find(a => a.id === this.props.id) && findArticle().content}
         </div>
       </div>
     )

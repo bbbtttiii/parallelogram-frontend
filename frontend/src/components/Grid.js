@@ -4,10 +4,12 @@ import Issue from './Issue.js'
 
 const Grid = () => {
   return (
+    <>
+    {/* <Issue /> */}
     <div className="Grid">
-      <Issue />
       <GridContent />
     </div>
+    </>
   )
 }
 

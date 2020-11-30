@@ -101,6 +101,7 @@ input[type=reset] {
  } */
 
 .Footer {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
   width: 90%;
   max-width: 1200px;
   height: 120px;
@@ -167,6 +168,7 @@ input[type=reset] {
 }
 
 .card-details {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   display: flex;
   justify-content: space-between;
   font-size: 1.2em;
@@ -186,9 +188,9 @@ input[type=reset] {
 }
 
 .card-summary {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   margin-top: 0.5em;
   line-height: 1.2em;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .Article {

@@ -1,8 +1,11 @@
 import React from 'react'
+import Issue from './Issue.js'
 
 const Footer = () => {
   return (
-    <div className="Footer">Parallelogram 2020</div>
+    <div className="Footer">
+      Parallelogram <Issue />
+    </div>
   )
 }
 

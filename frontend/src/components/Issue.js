@@ -1,8 +1,9 @@
 import React from 'react';
 
 const Issue = () => {
+
   let d = new Date();
-  let month = new Array();
+  let month = [];
   month[0] = "January";
   month[1] = "February";
   month[2] = "March";
@@ -15,7 +16,12 @@ const Issue = () => {
   month[9] = "October";
   month[10] = "November";
   month[11] = "December";
-  return month[d.getMonth()];
-} 
+
+  return (
+    <>
+    {month[d.getMonth()]} {d.getFullYear()}
+    </>
+  )
+}
 
 export default Issue;
