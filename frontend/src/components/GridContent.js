@@ -4,9 +4,15 @@ import { connect } from 'react-redux';
 import Card from './Card.js';
 
 const GridContent = props => {
-  // debugger
+
   console.log("articles loaded in gridcontent component", props.articles)
-  const articleCards = props.articles.map(a =>
+
+  //if on homepage filterarticles shhould be all articles
+  //if nonexistent url, redirect back to home route
+
+  const filterArticles = props.articles.filter(a => a.attributes.tag === props.match.params.tag)
+                       //point filterArticles to a function with logic
+  const articleCards = filterArticles.map(a =>
     <Card
       key={a.id}
       id={a.attributes.id}

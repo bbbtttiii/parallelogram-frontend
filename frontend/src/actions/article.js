@@ -1,11 +1,16 @@
-// import article from "../reducers/article"
-
 //sync
 export const showArticles = articles => {
   // console.log("in action creator", articles)
   return {
     type: 'ADD_ARTICLES',
     articles
+  }
+}
+
+export const filterArticlesByTag = tag => {
+  return {
+    type: 'FILTER_ARTICLES',
+    tag
   }
 }
 

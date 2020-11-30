@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 // import { NavLink } from 'react-router-dom';
 
 
-//make functional
+//make functional?
 class ArticleContent extends React.Component {
 
   render() {
@@ -15,6 +15,7 @@ class ArticleContent extends React.Component {
 
     return (
       <div className="Article">
+      {/* <button type="submit">Pin this article</button> */}
         <div className="article-title">
           {this.props.articles.find(a => a.id === this.props.id) && findArticle().title}
         </div>

@@ -16,8 +16,9 @@ const Main = () => {
         <Route exact path='/' component={Grid} />
         <Route exact path='/login' component={Login} />
         <Route exact path='/signup' component={Signup} />
-        <Route path={'/:id'} render={(props) => <Article {...props} />} />
-        {/* <Route exact path='/tag' component={} /> */}
+        <Route path={'/articles/:id'} render={(props) => <Article {...props} />} />
+        <Route exact path={'/:tag'} render={(props) => <Grid {...props} />} />
+
       </Switch>
     </div>
   )

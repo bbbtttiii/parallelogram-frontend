@@ -2,12 +2,12 @@ import React from 'react';
 import GridContent from './GridContent.js'
 import Issue from './Issue.js'
 
-const Grid = () => {
+const Grid = props => {
   return (
     <>
     {/* <Issue /> */}
     <div className="Grid">
-      <GridContent />
+      <GridContent history={props.history} location={props.location} match={props.match} />
     </div>
     </>
   )
