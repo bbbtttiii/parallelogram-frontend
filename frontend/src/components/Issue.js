@@ -19,7 +19,7 @@ const Issue = () => {
 
   return (
     <>
-    {month[d.getMonth()]} {d.getFullYear()}
+      {month[d.getMonth()]} {d.getFullYear()}
     </>
   )
 }

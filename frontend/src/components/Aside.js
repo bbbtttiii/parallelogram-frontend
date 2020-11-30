@@ -1,9 +1,17 @@
 import React from 'react'
+import { connect } from 'react-redux'
 
-const Aside = () => {
+const Aside = ({ loggedIn }) => {
   return (
-      <button className="like">❤</button>
+      loggedIn ? <button className="like">❤</button> : null
   )
 }
 
-export default Aside
+const mapStateToProps = ({ currentUser }) => {
+  return {
+    currentUser,
+    loggedIn: !!currentUser
+  }
+}
+
+export default connect(mapStateToProps)(Aside)
