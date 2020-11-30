@@ -5,7 +5,7 @@ import Login from './Login';
 import Signup from './Signup';
 import Article from './Article';
 // import { connect } from 'react-redux';
-import { Switch, Route, withRouter } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 
 // Routes are in Main because it's the highest-level component which shows routed content
 // (Header and footer do not change based on routes)

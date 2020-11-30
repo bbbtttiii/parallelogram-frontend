@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 // import Login from './Login.js';
 // import Signup from './Signup.js';
 import Logout from './Logout.js';
-import { Route, Link, NavLink, Switch} from 'react-router-dom';
+import { NavLink} from 'react-router-dom';
 
 const Nav = ({ currentUser, loggedIn }) => {
   return (

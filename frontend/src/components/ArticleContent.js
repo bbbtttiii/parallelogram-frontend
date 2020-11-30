@@ -1,10 +1,11 @@
 import React from 'react';
-// import { render } from 'react-dom';
 import { connect } from 'react-redux';
-import { NavLink } from 'react-router-dom';
+// import { render } from 'react-dom';
+// import { NavLink } from 'react-router-dom';
 
 class ArticleContent extends React.Component {
 
+  //using local state for article show page
   constructor() {
     super()
     this.state = {}
@@ -12,9 +13,9 @@ class ArticleContent extends React.Component {
 
   render() {
 
-  const findArticle = () => {
-    return this.props.articles.find(a => a.id === this.props.id).attributes
-  }
+    const findArticle = () => {
+      return this.props.articles.find(a => a.id === this.props.id).attributes
+    }
 
     return (
       <div className="Article">
