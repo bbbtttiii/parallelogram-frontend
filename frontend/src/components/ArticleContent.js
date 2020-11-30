@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import Aside from './Aside.js'
 // import { render } from 'react-dom';
 // import { NavLink } from 'react-router-dom';
 
@@ -15,7 +16,9 @@ class ArticleContent extends React.Component {
 
     return (
       <div className="Article">
-      {/* <button type="submit">Pin this article</button> */}
+        {/* <div className="Aside">
+          <Aside />
+        </div> */}
         <div className="article-title">
           {this.props.articles.find(a => a.id === this.props.id) && findArticle().title}
         </div>

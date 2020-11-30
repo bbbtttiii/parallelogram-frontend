@@ -26,7 +26,8 @@ html, body {
 .left-nav a, .right-nav a,
 input[type=button],
 input[type=submit],
-input[type=reset] {
+input[type=reset],
+button.like {
   letter-spacing: 1px;
   text-decoration: none;
   border: 1px solid black;
@@ -40,7 +41,8 @@ input[type=reset] {
 .left-nav a:hover, .right-nav a:hover,
 .right-nav input[type=button]:hover,
 .right-nav input[type=submit]:hover,
-.right-nav input[type=reset]:hover {
+.right-nav input[type=reset]:hover,
+button.like:hover {
   text-decoration: none;
   border: 1px solid black;
   background-color: pink;
@@ -215,6 +217,22 @@ a.selected {
   padding-top: 10px;
 }
 
+.Aside {
+  position: fixed;
+  display: flex;
+  margin: 0 auto;
+  top: 40%;
+  left: 0;
+  height: 200px;
+  vertical-align: center;
+  align-items: center;
+  width: 100px;
+  z-index: 1;
+  text-align: center;
+  font-size: 2em;
+  /* background-color: lightblue; */
+}
+
 .article-title {
   font-size: 3em;
   text-align: center;
@@ -267,4 +285,30 @@ a.selected {
 
 a:visited {
   color: black;
+}
+
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .Aside {
+    width: 100%;
+    height: auto;
+    position: relative;
+    /* text-align: center;
+    margin: 0 auto; */
+  }
+  button.like {
+    float: left;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  button.like {
+    margin: 0 auto;
+    text-align: center;
+    float: none;
+  }
 }

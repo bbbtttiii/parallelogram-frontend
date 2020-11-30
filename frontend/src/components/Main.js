@@ -18,7 +18,6 @@ const Main = () => {
         <Route exact path='/signup' component={Signup} />
         <Route path={'/articles/:id'} render={(props) => <Article {...props} />} />
         <Route exact path={'/:tag'} render={(props) => <Grid {...props} />} />
-
       </Switch>
     </div>
   )

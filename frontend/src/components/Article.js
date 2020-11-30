@@ -1,11 +1,17 @@
 import React from 'react';
 import ArticleContent from './ArticleContent.js'
+import Aside from './Aside.js'
 
 const Article = (props) => {
   return (
-    <div className="Article">
-      <ArticleContent id={props.match.params.id}/>
-    </div>
+    <>
+      <div className="Aside">
+        <Aside />
+      </div>
+      <div className="Article">
+        <ArticleContent id={props.match.params.id}/>
+      </div>
+    </>
   )
 }
 
