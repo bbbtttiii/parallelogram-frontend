@@ -85,6 +85,11 @@ a.selected {
   flex-direction: row;
 }
 
+.greeting {
+  display: inline;
+  font-weight: bold;
+}
+
 .Main {
   /* background-color: lightgray; */
   width: 90%;
@@ -310,6 +315,9 @@ a:visited {
     text-align: center;
     margin: 0 auto;
   }
+  .greeting {
+    display: inline;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -342,5 +350,11 @@ a:visited {
     margin: 0 auto;
     text-align: center;
     float: none;
+  }
+  .article-title {
+    font-size: 2em;
+  }
+  .article-details {
+    font-size: 1.5em;
   }
 }

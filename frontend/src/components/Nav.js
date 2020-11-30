@@ -21,8 +21,7 @@ const Nav = ({ currentUser, loggedIn }) => {
       </div>
       <div className="right-nav">
         {loggedIn
-          ? <> <strong>Hi, {currentUser.attributes.username}.</strong>
-               <NavLink to='/favorites'>Favorites</NavLink> <Logout /> </>
+          ? <> <div className="greeting">Hi, {currentUser.attributes.username}.</div> <Logout /> </>
           : <> <NavLink to='/login'>Log In</NavLink><NavLink to ='/signup'>Sign Up</NavLink> </>
         }
       </div>

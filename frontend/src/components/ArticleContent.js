@@ -10,35 +10,36 @@ class ArticleContent extends React.Component {
 
   render() {
 
+    let articleMatch = this.props.articles.find(a => a.id === this.props.id).attributes
+    
     const findArticle = () => {
-      return this.props.articles.find(a => a.id === this.props.id).attributes
+      return articleMatch
     }
 
     return (
       <div className="Article">
-        {/* <div className="Aside">
-          <Aside />
-        </div> */}
         <div className="article-title">
-          {this.props.articles.find(a => a.id === this.props.id) && findArticle().title}
+          {articleMatch && findArticle().title}
         </div>
         <div className="article-details">
-          {this.props.articles.find(a => a.id === this.props.id) && findArticle().author}
+          {articleMatch && findArticle().author}
         </div>
         <div className="article-photo">
-          <img src={`${this.props.articles.find(a => a.id === this.props.id) && findArticle().image_url}`} alt="Parallelogram" />
+          <img src={`${articleMatch && findArticle().image_url}`} alt="Parallelogram" />
         </div>
         <div className="article-content">
-          {this.props.articles.find(a => a.id === this.props.id) && findArticle().content}
+          {articleMatch && findArticle().content}
         </div>
       </div>
     )
   }
 }
 
-const mapStateToProps = state => {
+const mapStateToProps = (state, { currentUser }) => {
   return {
-    articles: state.article.articles
+    articles: state.article.articles,
+    currentUser,
+    loggedIn: !!currentUser
   }
 }
 
