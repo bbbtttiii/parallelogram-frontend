@@ -48,6 +48,10 @@ input[type=reset] {
   cursor: pointer;
 }
 
+a.selected {
+  background-color: pink;
+}
+
 .input-field {
   padding: 5px;
   margin-bottom: 10px;

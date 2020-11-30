@@ -14,10 +14,10 @@ const Nav = ({ currentUser, loggedIn }) => {
         </NavLink>
       </div>
       <div className="left-nav">
-        <NavLink to='/nature'>Nature</NavLink>
-        <NavLink to='/technology'>Technology</NavLink>
-        <NavLink to='/psychology'>Psychology</NavLink>
-        <NavLink to='/philosophy'>Philosophy</NavLink>
+        <NavLink activeClassName='selected' to='/nature'>Nature</NavLink>
+        <NavLink activeClassName='selected' to='/technology'>Technology</NavLink>
+        <NavLink activeClassName='selected' to='/psychology'>Psychology</NavLink>
+        <NavLink activeClassName='selected' to='/philosophy'>Philosophy</NavLink>
       </div>
       <div className="right-nav">
         {loggedIn

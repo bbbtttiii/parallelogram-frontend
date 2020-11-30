@@ -12,7 +12,7 @@ const Card = article => {
         </NavLink>
       </div>
       <h1 className="card-title">
-        <NavLink to={`${article.id}`}>{article.title}</NavLink>
+        <NavLink to={`/articles/${article.id}`}>{article.title}</NavLink>
       </h1>
       <div className="card-details">
         {article.author}<NavLink to='/tag'>{article.tag}</NavLink>
