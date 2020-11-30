@@ -25,9 +25,3 @@ const Card = article => {
 }
 
 export default Card;
-
-
-// For dynamic Links:
-
-// let articleId = {article.id}
-// <NavLink to={`/${articleId}`} className="nav-link">TEXT</NavLink>
