@@ -12,7 +12,7 @@ class ArticleContent extends React.Component {
   render() {
 
   const findArticle = () => {
-      return this.props.articles.find(a => a.id === this.props.id).attributes
+    return this.props.articles.find(a => a.id === this.props.id).attributes
   }
 
     return (

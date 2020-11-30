@@ -12,13 +12,13 @@ import { Switch, Route, withRouter } from 'react-router-dom';
 const Main = () => {
   return (
     <div className="Main">
-      {/* <Switch> */}
+      <Switch>
         <Route exact path='/' component={Grid} />
         <Route exact path='/login' component={Login} />
         <Route exact path='/signup' component={Signup} />
-        <Route exact path={'/:id'} render={(props) => <Article {...props} />} />
+        <Route path={'/:id'} render={(props) => <Article {...props} />} />
         {/* <Route exact path='/tag' component={} /> */}
-      {/* </Switch> */}
+      </Switch>
     </div>
   )
 }
