@@ -43,8 +43,8 @@ input[type=reset] {
 .right-nav input[type=reset]:hover {
   text-decoration: none;
   border: 1px solid black;
-  background-color: black;
-  color: white;
+  background-color: pink;
+  color: black;
   cursor: pointer;
 }
 
@@ -132,8 +132,8 @@ a.selected {
 }
 
 .Main form input[type=submit]:hover {
-  background-color: black;
-  color: white;
+  background-color: pink;
+  color: black;
   cursor: pointer;
 }
 
@@ -187,8 +187,8 @@ a.selected {
 }
 
 .card-details a:hover {
-  background-color: black;
-  color: white;
+  background-color: pink;
+  color: black;
 }
 
 .card-summary {
