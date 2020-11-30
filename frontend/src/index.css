@@ -207,7 +207,7 @@ input[type=reset] {
   display: flex;
   margin: 0 auto;
   align-content: center;
-  background-color: lightsalmon;
+  background-color: #ddd;
 }
 
 .article-photo img {
