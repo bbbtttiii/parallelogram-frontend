@@ -5,7 +5,7 @@ import Card from './Card.js';
 
 const GridContent = props => {
   // debugger
-  console.log("articles loaded in gridcontent", props.articles)
+  console.log("articles loaded in gridcontent component", props.articles)
   const articleCards = props.articles.map(a =>
     <Card
       key={a.id}

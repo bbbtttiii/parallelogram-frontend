@@ -6,9 +6,6 @@ import { getArticles, getArticle } from './actions/article.js'
 import Nav from './components/Nav.js';
 import Main from './components/Main.js';
 import Footer from './components/Footer.js'
-// import Login from './components/Login.js';
-// import Signup from './components/Signup.js';
-// import Logout from './components/Logout.js';
 import { withRouter } from 'react-router-dom';
 
 class App extends React.Component {

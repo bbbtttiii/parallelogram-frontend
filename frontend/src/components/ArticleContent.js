@@ -1,12 +1,13 @@
 import React from 'react';
 // import { render } from 'react-dom';
 import { connect } from 'react-redux';
+import { NavLink } from 'react-router-dom';
 
 class ArticleContent extends React.Component {
 
   constructor() {
     super()
-    this.state = []
+    this.state = {}
   }
 
   render() {
@@ -20,11 +21,11 @@ class ArticleContent extends React.Component {
         <div className="article-title">
           {findArticle().title}
         </div>
+        <div className="article-details">
+          {findArticle().author}
+        </div>
         <div className="article-photo">
           <img src={`${findArticle().image_url}`} alt="Parallelogram" />
-        </div>
-        <div className="article-details">
-          {findArticle().author} - {findArticle().tag}
         </div>
         <div className="article-content">
           {findArticle().content}
