@@ -7,7 +7,7 @@ const Card = article => {
   return (
     <div className="Card">
       <div className="card-photo">
-        <NavLink to ={`${article.id}`}>
+        <NavLink to ={`/articles/${article.id}`}>
           <img src={`${article.image_url}`} alt="article" />
         </NavLink>
       </div>
