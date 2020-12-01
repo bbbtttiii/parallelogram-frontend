@@ -1,10 +1,3 @@
-// export const addFavorite = favorite => {
-//   return {
-//     type: "ADD_FAVORITE",
-//     favorite
-//   }
-// }
-
 export const addFavorite = (userId, articleId) => {
   return dispatch => {
     return fetch('http://localhost:3001/api/v1/favorites', {

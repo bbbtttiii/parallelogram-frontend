@@ -5,7 +5,7 @@ import Signup from './Signup';
 import Article from './Article';
 import { Switch, Route } from 'react-router-dom';
 
-// Routes in Main because it's the highest-level component which shows routed content
+// Routes are in Main because it's the highest-level component which shows routed content
 // (Header and footer do not change based on routes)
 const Main = () => {
   return (

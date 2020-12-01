@@ -28,7 +28,7 @@ const ArticleContent = props => {
 
 const mapStateToProps = state => {
   return {
-    articles: state.article.articles,
+    articles: state.articles.articles,
   }
 }
 

@@ -23,13 +23,13 @@ const Sidebar = ({ loggedIn, addFavorite, currentUser, articleId, favorites, art
   )
 }
 
-const mapStateToProps = ({ currentUser, favorites, article }) => {
+const mapStateToProps = ({ currentUser, favorites, articles }) => {
   // debugger
   return {
     currentUser,
     loggedIn: !!currentUser,
     favorites,
-    articles: article.articles
+    articles: articles.articles
   }
 }
 

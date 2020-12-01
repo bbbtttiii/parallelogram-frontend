@@ -2,7 +2,6 @@ import { resetLoginForm } from './loginForm.js'
 import { resetSignupForm } from './signupForm.js'
 
 // synchronous action creators
-
 export const setCurrentUser = user => {
   return {
     type: 'SET_CURRENT_USER',
@@ -16,9 +15,7 @@ export const clearCurrentUser = () => {
   }
 }
 
-
 // asynchronous action creators
-
 export const login = (info, history) => {
   return dispatch => {
     return fetch('http://localhost:3001/api/v1/login', {

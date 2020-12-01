@@ -1,6 +1,6 @@
 /* eslint-disable import/no-anonymous-default-export */
 
-const initialState = []
+const initialState = 0
 
 export default (state = initialState, action) => {
   switch (action.type) {

@@ -25,35 +25,6 @@ export default (state = initialState, action) => {
         articles: articles
       }
 
-      // debugger
-      
-      // let updated = articles.map((a) => {
-      //   if (a.id === currentArticle.id) {
-      //     return currentArticle
-      //   } else {
-      //     return a
-      //   }
-      // })
-
-      // return updated
-      
-
-      // return {
-      //   ...state,
-      //   articles: {
-      //     ...state.articles,
-      //     relationships: {
-      //       ...state.articles,
-      //       favorites: {
-      //         ...state.relationships.favorites,
-      //         data: [
-      //           ...state.relationships.favorites.data,
-      //           updated
-      //         ]
-      //       }
-      //     }
-      //   }
-      //  }
     default:
       return state;
   }
