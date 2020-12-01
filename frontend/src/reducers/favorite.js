@@ -1,13 +1,13 @@
 /* eslint-disable import/no-anonymous-default-export */
 
+const initialState = 0
 
-
-export default (state = null, action) => {
+export default (state = initialState, action) => {
   switch (action.type) {
     case "ADD_FAVORITE":
-      return action.user
+      return (state + 1)
     case "REMOVE_FAVORITE":
-      return null
+      return (state - 1)
     default:
       return state
   }

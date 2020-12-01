@@ -13,7 +13,7 @@ const reducer = combineReducers({
   loginForm: loginForm,
   signupForm: signupForm,
   article: article,
-  favorite: favorite
+  favorite: favorite,
 });
 
 const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
