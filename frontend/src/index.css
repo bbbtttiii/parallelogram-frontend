@@ -226,13 +226,13 @@ a.selected {
   position: fixed;
   display: inline-block;
   margin: 0 auto;
-  top: 40%;
+  top: 33%;
   left: 0;
   z-index: 1;
   text-align: center;
   font-size: 1.2em;
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
-  /* background-color: lightblue; */
+  background-color: white;
 }
 
 .Sidebar button {
@@ -359,13 +359,15 @@ a:visited {
     font-size: 1.5em;
   }
   .Sidebar {
+
     width: 100%;
     height: auto;
     position: relative;
   }
   button.like {
-    float: left;
+    /* float: left; */
     text-align: center;
     margin: 0 auto;
+    font-size: 1.5em;
   }
 }

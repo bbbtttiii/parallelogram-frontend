@@ -9,7 +9,7 @@ const Sidebar = ({ loggedIn, addFavorite, currentUser, articleId, favorites, art
   console.log("favorite count", favorites)
 
   const handleClick = e => {
-    e.preventDefault()
+    // e.preventDefault()
     addFavorite(currentUser.id, articleId)
   }
 
@@ -24,7 +24,6 @@ const Sidebar = ({ loggedIn, addFavorite, currentUser, articleId, favorites, art
 }
 
 const mapStateToProps = ({ currentUser, favorites, articles }) => {
-  // debugger
   return {
     currentUser,
     loggedIn: !!currentUser,
