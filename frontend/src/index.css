@@ -222,7 +222,7 @@ a.selected {
   padding-top: 10px;
 }
 
-.Aside {
+.Sidebar {
   position: fixed;
   display: flex;
   margin: 0 auto;
@@ -291,7 +291,7 @@ a:visited {
   color: black;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 800px) {
   .Nav {
     display: block;
     height: auto;
@@ -304,7 +304,7 @@ a:visited {
   .right-nav {
     display: block;
   }
-  .Aside {
+  /* .Sidebar {
     width: 100%;
     height: auto;
     position: relative;
@@ -313,13 +313,13 @@ a:visited {
     float: left;
     text-align: center;
     margin: 0 auto;
-  }
+  } */
   .greeting {
     display: inline;
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   .Grid {
     display: flex;
     flex-direction: column;
@@ -355,5 +355,15 @@ a:visited {
   }
   .article-details {
     font-size: 1.5em;
+  }
+  .Sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  button.like {
+    float: left;
+    text-align: center;
+    margin: 0 auto;
   }
 }
