@@ -1,4 +1,4 @@
-//sync
+//synchronous
 export const showArticles = articles => {
   return {
     type: 'ADD_ARTICLES',
@@ -13,7 +13,7 @@ export const filterArticlesByTag = tag => {
   }
 }
 
-//async
+//asynchronous
 export const getArticles = () => {
   return dispatch => {
     return fetch('http://localhost:3001/api/v1/get_articles', {

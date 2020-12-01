@@ -6,6 +6,20 @@ export default (state = null, action) => {
       return action.user
     case "CLEAR_CURRENT_USER":
       return null
+    case "ADD_FAVORITE":
+      return {
+        ...state,
+        relationships: {
+          ...state.relationships,
+          favorites: {
+            ...state.relationships.favorites,
+            data: [
+              ...state.relationships.favorites.data,
+              action.favorite
+            ]
+          }
+        }
+      }
     default:
       return state
   }

@@ -3,26 +3,33 @@ import { connect } from 'react-redux'
 import { addFavorite } from '../actions/favorite.js'
 // import { SocialIcon } from 'react-social-icons'
 
-const Sidebar = ({ props, loggedIn }) => {
+//article id coming from router
+const Sidebar = ({ loggedIn, addFavorite, currentUser, articleId, favorites, articles }) => {
 
-  const handleClick = () => {
-    console.log("clicked")
+  console.log("favorite count", favorites)
+
+  const handleClick = e => {
+    e.preventDefault()
+    addFavorite(currentUser.id, articleId)
   }
 
   return (
-    loggedIn ?
-      <>
-        <button className="like" onClick={() => handleClick}>❤</button> <br/>
-      </> : null
+    loggedIn
+      ? <div className="Sidebar">
+          <button className="like" onClick={handleClick}>❤</button> <br/>
+          {articles.find(a => a.id === articleId) && articles.find(a => a.id === articleId).relationships.favorites.data.length}
+        </div>
+      : null
   )
 }
 
-
-const mapStateToProps = ({ currentUser, favorites }) => {
+const mapStateToProps = ({ currentUser, favorites, article }) => {
+  // debugger
   return {
     currentUser,
     loggedIn: !!currentUser,
-    favorites
+    favorites,
+    articles: article.articles
   }
 }
 

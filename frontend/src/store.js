@@ -12,7 +12,7 @@ const reducer = combineReducers({
   currentUser: currentUser,
   loginForm: loginForm,
   signupForm: signupForm,
-  article: article,
+  articles: article,
   favorite: favorite,
 });
 

@@ -38,17 +38,10 @@ const Login = ({ loginFormData, updateLoginForm, login, history }) => {
   )
 }
 
-// gives argument coming in to component:
-// {
-//   username: "foo",
-//   password: "password"
-// }
 const mapStateToProps = state => {
   return {
     loginFormData: state.loginForm
   }
 }
-
-// const mapDispatchToProps
 
 export default connect(mapStateToProps, { updateLoginForm, login })(Login);
