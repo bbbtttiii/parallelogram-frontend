@@ -3,27 +3,28 @@ import { connect } from 'react-redux';
 
 const ArticleContent = props => {
 
-    const findArticle = () => {
-      return props.articles.find(a => a.id === props.id).attributes
+    const finder = props.articles.find(a => a.id === props.id)
+
+    const returnArticle = () => {
+      return finder.attributes
     }
 
     return (
       <div className="Article">
         <div className="article-title">
-          {props.articles.find(a => a.id === props.id) && findArticle().title}
+          {finder && returnArticle().title}
         </div>
         <div className="article-details">
-          {props.articles.find(a => a.id === props.id) && findArticle().author}
+          {finder && returnArticle().author}
         </div>
         <div className="article-photo">
-          <img src={`${props.articles.find(a => a.id === props.id) && findArticle().image_url}`} alt="Parallelogram" />
+          <img src={`${finder && returnArticle().image_url}`} alt="Parallelogram" />
         </div>
         <div className="article-content">
-          {props.articles.find(a => a.id === props.id) && findArticle().content}
+          {finder && returnArticle().content}
         </div>
       </div>
     )
-  
 }
 
 const mapStateToProps = state => {
