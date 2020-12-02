@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Source+Serif+Pro:ital,wght@0,400;0,700;1,400&display=swap');
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -188,7 +190,7 @@ a.selected {
 }
 
 .card-details {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: 'Source Serif Pro', serif;
   display: flex;
   justify-content: space-between;
   font-size: 1.2em;
@@ -208,13 +210,13 @@ a.selected {
 }
 
 .card-summary {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: 'Source Serif Pro', serif;
   margin-top: 0.5em;
   line-height: 1.2em;
 }
 
 .Article {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: 'Source Serif Pro', serif;
   margin-left: 10%;
   margin-right: 10%;
   display: flex;
@@ -359,7 +361,6 @@ a:visited {
     font-size: 1.5em;
   }
   .Sidebar {
-
     width: 100%;
     height: auto;
     position: relative;
