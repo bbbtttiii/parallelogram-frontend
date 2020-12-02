@@ -4,7 +4,7 @@ import Issue from './Issue.js'
 const Footer = () => {
   return (
     <div className="Footer">
-      Parallelogram Magazine | <Issue />
+      Parallelogram Magazine / <Issue />
     </div>
   )
 }

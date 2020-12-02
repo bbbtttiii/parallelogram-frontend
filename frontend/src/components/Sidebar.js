@@ -8,16 +8,17 @@ const Sidebar = ({ loggedIn, addFavorite, currentUser, articleId, favorites, art
 
   console.log("favorite count", favorites)
 
-  const handleClick = e => {
-    // e.preventDefault()
+  const handleClick = () => {
     addFavorite(currentUser.id, articleId)
   }
+  
+  const targetArticle = articles.find(a => a.id === articleId)
 
   return (
     loggedIn
       ? <div className="Sidebar">
           <button className="like" onClick={handleClick}>❤</button> <br/>
-          {articles.find(a => a.id === articleId) && articles.find(a => a.id === articleId).relationships.favorites.data.length}
+          {targetArticle && targetArticle.relationships.favorites.data.length}
         </div>
       : null
   )
