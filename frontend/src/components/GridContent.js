@@ -4,7 +4,7 @@ import Card from './Card.js';
 
 const GridContent = props => {
 
-  console.log("articles loaded in gridcontent component", props.articles)
+  // console.log("articles loaded in gridcontent component", props.articles)
 
   const filterArticles = props.match.params.tag
     ? props.articles.filter(a => a.attributes.tag === props.match.params.tag)
@@ -18,7 +18,8 @@ const GridContent = props => {
       author={a.attributes.author}
       summary={a.attributes.summary}
       tag={a.attributes.tag}
-      image_url={a.attributes.image_url} />) 
+      image_url={a.attributes.image_url}
+    />) 
   return articleCards
 }
 

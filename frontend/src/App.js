@@ -32,4 +32,4 @@ const mapStatetoProps = state => {
   })
 }
 
-export default withRouter(connect(mapStatetoProps, {getCurrentUser, getArticles})(App));
+export default withRouter(connect(mapStatetoProps, {getCurrentUser, getArticles})(App))

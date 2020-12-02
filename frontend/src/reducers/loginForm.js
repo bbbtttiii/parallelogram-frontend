@@ -12,6 +12,6 @@ export default (state = initialState, action) => {
       case "RESET_LOGIN_FORM":
         return initialState
       default:
-          return state
+        return state
   }
 }
