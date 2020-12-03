@@ -8,8 +8,6 @@ export default (state = initialState, action) => {
   switch (action.type) {
     case 'ADD_ARTICLES':
       return { ...state, articles: action.articles }
-    case 'FILTER_ARTICLES':
-      return state.tags.filter(a => a.tag === action.payload.tag)
     case "ADD_FAVORITE":
 
       //find current article
@@ -20,7 +18,7 @@ export default (state = initialState, action) => {
 
       //map through collection of articles and replace with updated version
       let articles = state.articles.map(a => (a.id === currentArticle.id ? currentArticle : a))
-      
+
       return { articles }
     default:
       return state;
