@@ -1,21 +1,21 @@
-import React from 'react';
+import React from 'react'
 
 const Issue = () => {
 
-  let d = new Date();
-  let month = [];
-  month[0] = "January";
-  month[1] = "February";
-  month[2] = "March";
-  month[3] = "April";
-  month[4] = "May";
-  month[5] = "June";
-  month[6] = "July";
-  month[7] = "August";
-  month[8] = "September";
-  month[9] = "October";
-  month[10] = "November";
-  month[11] = "December";
+  let d = new Date()
+  let month = []
+  month[0] = "January"
+  month[1] = "February"
+  month[2] = "March"
+  month[3] = "April"
+  month[4] = "May"
+  month[5] = "June"
+  month[6] = "July"
+  month[7] = "August"
+  month[8] = "September"
+  month[9] = "October"
+  month[10] = "November"
+  month[11] = "December"
 
   return (
     <>
@@ -24,4 +24,4 @@ const Issue = () => {
   )
 }
 
-export default Issue;
+export default Issue
