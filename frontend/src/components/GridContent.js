@@ -1,6 +1,6 @@
-import React from 'react';
-import { connect } from 'react-redux';
-import Card from './Card.js';
+import React from 'react'
+import { connect } from 'react-redux'
+import Card from './Card.js'
 
 const GridContent = props => {
 
@@ -29,4 +29,4 @@ const mapStateToProps = state => {
   }
 }
 
-export default connect(mapStateToProps)(GridContent);
+export default connect(mapStateToProps)(GridContent)

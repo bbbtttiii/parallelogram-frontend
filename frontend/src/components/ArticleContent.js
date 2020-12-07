@@ -1,5 +1,5 @@
-import React from 'react';
-import { connect } from 'react-redux';
+import React from 'react'
+import { connect } from 'react-redux'
 
 const ArticleContent = props => {
 
@@ -33,4 +33,4 @@ const mapStateToProps = state => {
   }
 }
 
-export default connect(mapStateToProps)(ArticleContent);
+export default connect(mapStateToProps)(ArticleContent)

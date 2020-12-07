@@ -1,7 +1,7 @@
-import React from 'react';
+import React from 'react'
 import { connect } from 'react-redux'
-import Logout from './Logout.js';
-import { NavLink} from 'react-router-dom';
+import Logout from './Logout.js'
+import { NavLink} from 'react-router-dom'
 
 const Nav = ({ currentUser, loggedIn }) => {
   return (
@@ -34,4 +34,4 @@ const mapStateToProps = ({ currentUser }) => {
   }
 }
 
-export default connect(mapStateToProps)(Nav);
+export default connect(mapStateToProps)(Nav)

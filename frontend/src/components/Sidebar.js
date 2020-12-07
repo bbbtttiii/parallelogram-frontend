@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import { addFavorite } from '../actions/favorite.js'
 // import { SocialIcon } from 'react-social-icons'
 
-                                                       //article id coming from router
+//article id coming from router
 const Sidebar = ({ loggedIn, addFavorite, currentUser, articleId, articles }) => {
 
   const handleClick = () => {

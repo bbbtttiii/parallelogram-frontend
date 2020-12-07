@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import GridContent from './GridContent.js'
 import Issue from './Issue.js'
 
@@ -15,4 +15,4 @@ const Grid = props => {
   )
 }
 
-export default Grid;
+export default Grid

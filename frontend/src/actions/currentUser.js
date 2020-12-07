@@ -1,7 +1,7 @@
 import { resetLoginForm } from './loginForm.js'
 import { resetSignupForm } from './signupForm.js'
 
-// synchronous action creators
+// synchronous action creators - no data to fetch - pure functions
 export const setCurrentUser = user => {
   return {
     type: 'SET_CURRENT_USER',
@@ -15,7 +15,7 @@ export const clearCurrentUser = () => {
   }
 }
 
-// asynchronous action creators
+// asynchronous action creators (redux-thunk)
 export const login = (info, history) => {
   return dispatch => {
     return fetch('http://localhost:3001/api/v1/login', {

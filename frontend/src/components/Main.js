@@ -1,9 +1,9 @@
-import React from 'react';
-import Grid from './Grid';
-import Login from './Login';
-import Signup from './Signup';
-import Article from './Article';
-import { Switch, Route } from 'react-router-dom';
+import React from 'react'
+import Grid from './Grid'
+import Login from './Login'
+import Signup from './Signup'
+import Article from './Article'
+import { Switch, Route } from 'react-router-dom'
 
 // Routes are in Main because it's the highest-level component which shows routed content
 // (Header and footer do not change based on routes)
@@ -21,4 +21,4 @@ const Main = () => {
   )
 }
 
-export default Main;
+export default Main
