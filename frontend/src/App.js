@@ -1,12 +1,12 @@
-import React from 'react';
-import './index.css';
-import { connect } from 'react-redux';
-import { getCurrentUser } from './actions/currentUser.js';
+import React from 'react'
+import './index.css'
+import { connect } from 'react-redux'
+import { getCurrentUser } from './actions/currentUser.js'
 import { getArticles } from './actions/article.js'
-import Nav from './components/Nav.js';
-import Main from './components/Main.js';
+import Nav from './components/Nav.js'
+import Main from './components/Main.js'
 import Footer from './components/Footer.js'
-import { withRouter } from 'react-router-dom';
+import { withRouter } from 'react-router-dom'
 
 class App extends React.Component {
 
@@ -22,14 +22,14 @@ class App extends React.Component {
         <Main />
         <Footer />
       </div>
-    );
+    )
   }
 }
 
 const mapStatetoProps = state => {
   return ({
-    loggedIn: !!state.currentUser,
+    loggedIn: !!state.currentUser
   })
 }
 
-export default withRouter(connect(mapStatetoProps,  {getCurrentUser, getArticles })(App))
+export default withRouter(connect(mapStatetoProps, {getCurrentUser, getArticles })(App))
