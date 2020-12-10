@@ -14,7 +14,7 @@ export const filterArticlesByTag = tag => {
 
 export const getArticles = () => {
   return dispatch => {
-    return fetch('https://parallelogram-api.herokuapp.com/api/v1/get_articles', {
+    return fetch('https://parallelogram.herokuapp.com/api/v1/get_articles', {
       credentials: "include",
       method: 'GET',
       headers: {

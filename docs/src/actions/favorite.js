@@ -1,6 +1,6 @@
 export const addFavorite = (userId, articleId) => {
   return dispatch => {
-    return fetch('https://parallelogram-api.herokuapp.com/api/v1/favorites', {
+    return fetch('https://parallelogram.herokuapp.com/api/v1/favorites', {
       credentials: "include",
       method: 'POST',
       headers: {
