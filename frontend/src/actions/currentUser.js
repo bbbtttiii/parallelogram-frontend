@@ -70,7 +70,7 @@ export const signup = (info, history) => {
 export const logout = () => {
   return (dispatch) => {
     dispatch(clearCurrentUser())
-    return fetch('http://localhost:3001/api/v1/logout', {
+    return fetch('https://parallelogram-api.herokuapp.com/api/v1/logout', {
       credentials: 'include',
       method: 'DELETE'
     })
@@ -79,7 +79,7 @@ export const logout = () => {
 
 export const getCurrentUser = () => {
   return dispatch => {
-    return fetch('http://localhost:3001/api/v1/get_current_user', {
+    return fetch('https://parallelogram-api.herokuapp.com/api/v1/get_current_user', {
       credentials: "include",
       method: 'GET',
       headers: {
