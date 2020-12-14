@@ -1,7 +1,7 @@
 {
   "homepage": "https://www.beniburg.com/parallelogram",
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Parallelogram",
+  "name": "Parallelogram",
   "icons": [
     {
       "src": "favicon.ico",
