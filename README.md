@@ -2,7 +2,7 @@
 A platform made for curated, multi-disciplinary articles from topics such as natural science, technology, psychology, philosophy, and more. Built with a React/Redux frontend and Rails API backend.
 
 <p align="center">
-  <img width="50%" height="50%" src="frontend/public/parallelogram.jpg">
+  <img width="80%" height="80%" src="frontend/public/parallelogram.jpg">
 </p>
 
 ## Getting Started
