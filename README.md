@@ -1,9 +1,7 @@
 # Parallelogram
 A platform made for curated, multi-disciplinary articles from topics such as natural science, technology, psychology, philosophy, and more. Built with a React/Redux frontend and Rails API backend.
 
-<p align="center">
-  <img width="80%" height="80%" src="frontend/public/parallelogram.jpg">
-</p>
+![parallelogram](frontend/public/parallelogram.jpg "Parallelogram")
 
 ## Getting Started
 
@@ -27,7 +25,7 @@ Feel free to report a bug or create a pull request if you have any ideas for exp
 
 ## Authors
 
-- [Ben Iburg](https://github.com/bbbtttiii)
+- Ben Iburg (https://github.com/bbbtttiii)
 
 ## License
 
