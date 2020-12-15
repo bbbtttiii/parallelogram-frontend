@@ -14,7 +14,9 @@ export const filterArticlesByTag = tag => {
 
 export const getArticles = () => {
   return dispatch => {
-    return fetch('https://parallelogram-api.herokuapp.com/api/v1/get_articles', {
+    const proxy = 'https://cors-anywhere.herokuapp.com/'
+    const url = 'https://parallelogram-api.herokuapp.com/api/v1/get_articles'
+    return fetch(proxy + url, {
       credentials: "include",
       method: 'GET',
       headers: {

@@ -18,7 +18,9 @@ export const clearCurrentUser = () => {
 // asynchronous action creators (redux-thunk)
 export const login = (info, history) => {
   return dispatch => {
-    return fetch('http://localhost:3001/api/v1/login', {
+    const proxy = 'https://cors-anywhere.herokuapp.com/'
+    const url = 'https://parallelogram-api.herokuapp.com/api/v1/login'
+    return fetch(proxy + url, {
       credentials: "include",
       method: 'POST',
       headers: {
@@ -45,7 +47,9 @@ export const signup = (info, history) => {
     const userInfo = {
       user: info
     }
-    return fetch('http://localhost:3001/api/v1/signup', {
+    const proxy = 'https://cors-anywhere.herokuapp.com/'
+    const url = 'https://parallelogram-api.herokuapp.com/api/v1/signup'
+    return fetch(proxy + url, {
       credentials: 'include',
       method: 'POST',
       headers: {
@@ -70,7 +74,9 @@ export const signup = (info, history) => {
 export const logout = () => {
   return (dispatch) => {
     dispatch(clearCurrentUser())
-    return fetch('https://parallelogram-api.herokuapp.com/api/v1/logout', {
+    const proxy = 'https://cors-anywhere.herokuapp.com/'
+    const url = 'https://parallelogram-api.herokuapp.com/api/v1/logout'
+    return fetch(proxy + url, {
       credentials: 'include',
       method: 'DELETE'
     })
@@ -79,7 +85,9 @@ export const logout = () => {
 
 export const getCurrentUser = () => {
   return dispatch => {
-    return fetch('https://parallelogram-api.herokuapp.com/api/v1/get_current_user', {
+    const proxy = 'https://cors-anywhere.herokuapp.com/'
+    const url = 'https://parallelogram-api.herokuapp.com/api/v1/get_current_user'
+    return fetch(proxy + url, {
       credentials: "include",
       method: 'GET',
       headers: {
