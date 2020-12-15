@@ -1,13 +1,13 @@
 export const addFavorite = (userId, articleId) => {
   return dispatch => {
-    const proxy = 'https://cors-anywhere.herokuapp.com/'
+    // const proxy = 'https://cors-anywhere.herokuapp.com/'
     const url = 'https://parallelogram-api.herokuapp.com/api/v1/favorites'
-    return fetch(proxy + url, {
+    return fetch(url, {
       credentials: "include",
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
+      // headers: {
+      //   'Content-Type': 'application/json'
+      // },
       body: JSON.stringify({
         user_id: userId,
         article_id: articleId})

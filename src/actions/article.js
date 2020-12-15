@@ -14,14 +14,14 @@ export const filterArticlesByTag = tag => {
 
 export const getArticles = () => {
   return dispatch => {
-    const proxy = 'https://cors-anywhere.herokuapp.com/'
+    // const proxy = 'https://cors-anywhere.herokuapp.com/'
     const url = 'https://parallelogram-api.herokuapp.com/api/v1/get_articles'
-    return fetch(proxy + url, {
+    return fetch(url, {
       credentials: "include",
       method: 'GET',
-      headers: {
-        'Content-Type': 'application/json'
-      },
+      // headers: {
+      //   'Content-Type': 'application/json'
+      // },
     })
     .then(r => r.json())
     .then(response => {
