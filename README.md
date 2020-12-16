@@ -1,17 +1,13 @@
 # Parallelogram
 A platform made for curated, multi-disciplinary articles from topics such as natural science, technology, psychology, philosophy, and more. Built with a React/Redux frontend and Rails API backend.
 
-![parallelogram](frontend/public/parallelogram.jpg "Parallelogram")
+![parallelogram](public/parallelogram.jpg "Parallelogram")
 
 ## Getting Started
 
 - Clone
 - Make sure Rails server is running
-- Run:
-```
-npm install
-npm start
-```
+- Run `npm install` and `npm start`
 - Head to `localhost:3000` in your browser
 
 ## Contributing
