@@ -19,9 +19,9 @@ export const getArticles = () => {
     return fetch(proxy + url, {
       credentials: "include",
       method: 'GET',
-      // headers: {
-      //   'Content-Type': 'application/json'
-      // },
+      headers: {
+        'Content-Type': 'application/json'
+      },
     })
     .then(r => r.json())
     .then(response => {

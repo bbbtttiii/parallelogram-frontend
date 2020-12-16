@@ -23,9 +23,9 @@ export const login = (info, history) => {
     return fetch(proxy + url, {
       credentials: "include",
       method: 'POST',
-      // headers: {
-      //   'Content-Type': 'application/json'
-      // },
+      headers: {
+        'Content-Type': 'application/json'
+      },
       body: JSON.stringify(info)
     })
     .then(r => r.json())
@@ -52,9 +52,9 @@ export const signup = (info, history) => {
     return fetch(proxy + url, {
       credentials: 'include',
       method: 'POST',
-      // headers: {
-      //   'Content-Type': 'application/json'
-      // },
+      headers: {
+        'Content-Type': 'application/json'
+      },
       body: JSON.stringify(userInfo)
     })
     .then(r => r.json())
@@ -90,9 +90,9 @@ export const getCurrentUser = () => {
     return fetch(proxy + url, {
       credentials: "include",
       method: 'GET',
-      // headers: {
-      //   'Content-Type': 'application/json'
-      // },
+      headers: {
+        'Content-Type': 'application/json'
+      },
     })
     .then(r => r.json())
     .then(response => {

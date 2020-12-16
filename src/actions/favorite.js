@@ -5,9 +5,9 @@ export const addFavorite = (userId, articleId) => {
     return fetch(proxy + url, {
       credentials: "include",
       method: 'POST',
-      // headers: {
-      //   'Content-Type': 'application/json'
-      // },
+      headers: {
+        'Content-Type': 'application/json'
+      },
       body: JSON.stringify({
         user_id: userId,
         article_id: articleId})
