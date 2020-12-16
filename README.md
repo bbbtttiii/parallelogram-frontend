@@ -6,7 +6,7 @@ A platform made for curated, multi-disciplinary articles from topics such as nat
 ## Getting Started
 
 - Clone
-- Make sure [Rails server](https://github.com/bbbtttiii/parallelogram-api) is running
+- Make sure the [Rails server](https://github.com/bbbtttiii/parallelogram-api) is running
 - Run `npm install` and `npm start`
 - Head to `localhost:3000` in your browser
 
