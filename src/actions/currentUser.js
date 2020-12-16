@@ -24,7 +24,8 @@ export const login = (info, history) => {
       credentials: "include",
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Credentials': 'true'
       },
       body: JSON.stringify(info)
     })
@@ -53,7 +54,8 @@ export const signup = (info, history) => {
       credentials: 'include',
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Credentials': 'true'
       },
       body: JSON.stringify(userInfo)
     })
@@ -88,10 +90,11 @@ export const getCurrentUser = () => {
     const proxy = 'https://cors-anywhere.herokuapp.com/'
     const url = 'https://parallelogram-api.herokuapp.com/api/v1/get_current_user'
     return fetch(proxy + url, {
-      // credentials: "include",
+      credentials: "include",
       method: 'GET',
       headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Credentials': 'true'
       },
     })
     .then(r => r.json())
