@@ -6,13 +6,8 @@ A platform made for curated, multi-disciplinary articles from topics such as nat
 ## Getting Started
 
 - Clone
-- In `backend`
-```
-rails db:migrate
-rails db:seed
-rails s
-```
-- In `frontend`
+- Make sure Rails server is running
+- Run:
 ```
 npm install
 npm start
