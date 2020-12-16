@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 import './index.css'
 import App from './App'
 // import reportWebVitals from './reportWebVitals'
+import { ScrollToTop } from './ScrollToTop.js'
 import { Provider } from 'react-redux'
 import store from './store.js'
 import { BrowserRouter as Router } from 'react-router-dom'
@@ -10,7 +11,9 @@ import { BrowserRouter as Router } from 'react-router-dom'
 ReactDOM.render(
   <Provider store={store}>
     <Router>
-      <App />
+      <ScrollToTop>
+        <App />
+      </ScrollToTop>
     </Router>
   </Provider>,
   document.getElementById('root')
