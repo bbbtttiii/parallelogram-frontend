@@ -88,7 +88,7 @@ export const getCurrentUser = () => {
     const proxy = 'https://cors-anywhere.herokuapp.com/'
     const url = 'https://parallelogram-api.herokuapp.com/api/v1/get_current_user'
     return fetch(proxy + url, {
-      credentials: "include",
+      // credentials: "include",
       method: 'GET',
       headers: {
         'Content-Type': 'application/json'
