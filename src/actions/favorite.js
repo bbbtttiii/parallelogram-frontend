@@ -7,7 +7,9 @@ export const addFavorite = (userId, articleId) => {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Access-Control-Allow-Credentials': 'true'
+        'Access-Control-Allow-Credentials': 'true',
+        'Access-Control-Allow-Origin': 'https://www.beniburg.com/parallelogram'
+
       },
       body: JSON.stringify({
         user_id: userId,

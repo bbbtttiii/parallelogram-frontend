@@ -25,7 +25,8 @@ export const login = (info, history) => {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Access-Control-Allow-Credentials': 'true'
+        'Access-Control-Allow-Credentials': 'true',
+        'Access-Control-Allow-Origin': 'https://www.beniburg.com/parallelogram'
       },
       body: JSON.stringify(info)
     })
@@ -55,7 +56,9 @@ export const signup = (info, history) => {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Access-Control-Allow-Credentials': 'true'
+        'Access-Control-Allow-Credentials': 'true',
+        'Access-Control-Allow-Origin': 'https://www.beniburg.com/parallelogram'
+
       },
       body: JSON.stringify(userInfo)
     })
@@ -94,7 +97,9 @@ export const getCurrentUser = () => {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
-        'Access-Control-Allow-Credentials': 'true'
+        'Access-Control-Allow-Credentials': 'true',
+        'Access-Control-Allow-Origin': 'https://www.beniburg.com/parallelogram'
+
       },
     })
     .then(r => r.json())
