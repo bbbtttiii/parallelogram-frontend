@@ -8,7 +8,7 @@ export const addFavorite = (userId, articleId) => {
       headers: {
         'Content-Type': 'application/json',
         'Access-Control-Allow-Credentials': 'true',
-        'Access-Control-Allow-Origin': 'https://www.beniburg.com/parallelogram'
+        'Access-Control-Allow-Origin': 'https://parallelogram.herokuapp.com'
 
       },
       body: JSON.stringify({
