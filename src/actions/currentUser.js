@@ -18,15 +18,11 @@ export const clearCurrentUser = () => {
 // asynchronous action creators (redux-thunk)
 export const login = (info, history) => {
   return dispatch => {
-    const proxy = 'https://cors-anywhere.herokuapp.com/'
-    const url = 'https://parallelogram-api.herokuapp.com/api/v1/login'
-    return fetch(proxy + url, {
+    return fetch('http://localhost:3001/api/v1/login', {
       credentials: "include",
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json',
-        'Access-Control-Allow-Credentials': 'true',
-        'Access-Control-Allow-Origin': 'https://parallelogram.herokuapp.com'
+        'Content-Type': 'application/json'
       },
       body: JSON.stringify(info)
     })
@@ -49,16 +45,11 @@ export const signup = (info, history) => {
     const userInfo = {
       user: info
     }
-    const proxy = 'https://cors-anywhere.herokuapp.com/'
-    const url = 'https://parallelogram-api.herokuapp.com/api/v1/signup'
-    return fetch(proxy + url, {
+    return fetch('http://localhost:3001/api/v1/signup', {
       credentials: 'include',
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json',
-        'Access-Control-Allow-Credentials': 'true',
-        'Access-Control-Allow-Origin': 'https://parallelogram.herokuapp.com'
-
+        'Content-Type': 'application/json'
       },
       body: JSON.stringify(userInfo)
     })
@@ -79,9 +70,7 @@ export const signup = (info, history) => {
 export const logout = () => {
   return (dispatch) => {
     dispatch(clearCurrentUser())
-    const proxy = 'https://cors-anywhere.herokuapp.com/'
-    const url = 'https://parallelogram-api.herokuapp.com/api/v1/logout'
-    return fetch(proxy + url, {
+    return fetch('http://localhost:3001/api/v1/logout', {
       credentials: 'include',
       method: 'DELETE'
     })
@@ -90,16 +79,11 @@ export const logout = () => {
 
 export const getCurrentUser = () => {
   return dispatch => {
-    const proxy = 'https://cors-anywhere.herokuapp.com/'
-    const url = 'https://parallelogram-api.herokuapp.com/api/v1/get_current_user'
-    return fetch(proxy + url, {
+    return fetch('http://localhost:3001/api/v1/get_current_user', {
       credentials: "include",
       method: 'GET',
       headers: {
-        'Content-Type': 'application/json',
-        'Access-Control-Allow-Credentials': 'true',
-        'Access-Control-Allow-Origin': 'https://parallelogram.herokuapp.com'
-
+        'Content-Type': 'application/json'
       },
     })
     .then(r => r.json())
