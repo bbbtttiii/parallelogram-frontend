@@ -12,6 +12,7 @@ const GridContent = props => {
 
   const articleCards = filterArticles.map(a =>
     <Card
+      className={"Card"}
       key={a.id}
       id={a.attributes.id}
       title={a.attributes.title}
