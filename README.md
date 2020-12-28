@@ -1,7 +1,7 @@
 # Parallelogram
 A platform made for curated, multi-disciplinary articles from topics such as natural science, technology, psychology, philosophy, and more. Built with a React/Redux frontend and Rails API [backend](https://github.com/bbbtttiii/parallelogram-api).
 
-![parallelogram](public/parallelogram.jpg "Parallelogram")
+![parallelogram](public/parallelogram.gif "Parallelogram")
 
 ## Getting Started
 
