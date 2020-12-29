@@ -16,7 +16,11 @@ Feel free to report a bug or create a pull request if you have any ideas for exp
 
 ## Authors
 
-- Ben Iburg (https://github.com/bbbtttiii)
+- [Ben Iburg](https://github.com/bbbtttiii)
+
+## Acknowledgements
+
+- Photography courtesy of [Unsplash](http://www.unsplash.com) 
 
 ## License
 
