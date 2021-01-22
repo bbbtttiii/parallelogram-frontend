@@ -78,7 +78,6 @@ a.selected {
 
 .title a:hover {
   font-style: italic;
-  /* text-shadow: 0 0 .1px black; */
 }
 
 .left-nav {
@@ -98,11 +97,11 @@ a.selected {
 }
 
 .Main {
-  /* background-color: lightgray; */
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 10px 0 50px;
+  font-family: 'Source Serif Pro', serif;
 }
 
 .Grid {
@@ -113,7 +112,7 @@ a.selected {
 }
 
 .Footer {
-  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-family: 'Source Serif Pro', serif;
   width: 90%;
   max-width: 1200px;
   height: 120px;
@@ -121,6 +120,7 @@ a.selected {
   margin: 0 auto;
   display: flex;
   align-items: center;
+  font-weight: bold;
 }
 
 .Main form {
@@ -143,13 +143,18 @@ a.selected {
   background-color: pink;
   color: black;
   cursor: pointer;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
 }
 
 .Issue {
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
   font-style: italic;
   font-weight: bold;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   margin-bottom: 1em;
   margin-left: 1em;
 }
@@ -165,9 +170,9 @@ a.selected {
 }
 
 .card-title {
-  line-height: 0.9em;
-  font-family: 'Roboto', Arial, Helvetica, sans-serif;
-  margin-bottom: 10px;
+  line-height: 1em;
+  font-family: 'Source Serif Pro', serif;
+  margin-bottom: 5px;
 }
 
 .card-title a {
@@ -176,7 +181,7 @@ a.selected {
 }
 
 .card-title a:hover {
-  font-style: italic;
+  text-decoration: underline;
 }
 
 .card-photo {
@@ -198,6 +203,7 @@ a.selected {
 
 .card-details a {
   /* border-radius: 10px; */
+  color: black;
   border: 1px black solid;
   margin-left: 5px;
   padding: 0 3px 0;
@@ -258,6 +264,7 @@ a.selected {
 
 .article-title {
   font-size: 3em;
+  font-weight: bold;
   text-align: center;
 }
 
@@ -297,7 +304,7 @@ a.selected {
 
 .article-content {
   margin-top: 1.25em;
-  font-size: 1.5em;
+  font-size: 1.25em;
   white-space: pre-wrap;
 }
 

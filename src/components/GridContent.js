@@ -4,8 +4,6 @@ import Card from './Card.js'
 
 const GridContent = props => {
 
-  // console.log("articles loaded in gridcontent component", props.articles)
-
   const filterArticles = props.match.params.tag
     ? props.articles.filter(a => a.attributes.tag === props.match.params.tag)
     : props.articles
@@ -20,8 +18,15 @@ const GridContent = props => {
       summary={a.attributes.summary}
       tag={a.attributes.tag}
       image_url={a.attributes.image_url}
-    />) 
-  return articleCards
+    />)
+
+    if (filterArticles.length === 0) {
+      return "No articles with this tag."
+    } else {
+      return articleCards
+
+    }
+
 }
 
 const mapStateToProps = state => {
