@@ -20,7 +20,7 @@ Feel free to report a bug or create a pull request if you have any ideas for exp
 
 ## Acknowledgements
 
-- Photography courtesy of [Unsplash](http://www.unsplash.com) 
+- Photography courtesy of [Unsplash Source API](https://source.unsplash.com/) 
 
 ## License
 
