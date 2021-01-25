@@ -35,7 +35,7 @@ button.like {
   border: 1px solid black;
   background-color: transparent;
   color: black;
-  padding: 0 3px 0;
+  padding: 2px;
   margin: 0 5px 0;
   font-size: 1em;
 }
@@ -66,7 +66,7 @@ a.selected {
   margin-bottom: 10px;
 }
 
-.title a{
+.title a {
   width: 250px;
   letter-spacing: -1px;
   font-size: 1.2em;
@@ -198,6 +198,7 @@ a.selected {
   font-family: 'Source Serif Pro', serif;
   display: flex;
   justify-content: space-between;
+  padding-top: 5px;
   /* font-size: 1.2em; */
 }
 
@@ -206,7 +207,7 @@ a.selected {
   color: black;
   border: 1px black solid;
   margin-left: 5px;
-  padding: 0 3px 0;
+  padding: 2px;
   text-decoration: none;
 }
 
@@ -303,9 +304,11 @@ a.selected {
 }
 
 .article-content {
-  margin-top: 1.25em;
+  padding-top: 1.25em;
   font-size: 1.25em;
   white-space: pre-wrap;
+  width: 700px;
+  margin: 0 auto;
 }
 
 .article-content::first-letter {
