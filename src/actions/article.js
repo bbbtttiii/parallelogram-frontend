@@ -14,7 +14,7 @@ export const filterArticlesByTag = tag => {
 
 export const getArticles = () => {
   return dispatch => {
-    return fetch('https://localhost3001/api/v1/get_articles', {
+    return fetch('https://localhost:3001/api/v1/get_articles', {
       credentials: "include",
       method: 'GET',
       headers: {
