@@ -176,13 +176,13 @@ a.selected {
 }
 
 .card-title a {
-  text-decoration: underline;
-  text-decoration-color: pink;
+  text-decoration: none;
   color: black;
 }
 
 .card-title a:hover {
   text-decoration: underline;
+  text-decoration-color: pink;
 }
 
 .card-photo {
