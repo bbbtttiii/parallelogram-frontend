@@ -20,13 +20,7 @@ const GridContent = props => {
       image_url={a.attributes.image_url}
     />)
 
-    if (filterArticles.length === 0) {
-      return "No articles with this tag."
-    } else {
-      return articleCards
-
-    }
-
+  return articleCards
 }
 
 const mapStateToProps = state => {
