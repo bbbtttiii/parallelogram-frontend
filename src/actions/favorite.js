@@ -1,6 +1,6 @@
 export const addFavorite = (userId, articleId) => {
   return dispatch => {
-    return fetch('https://localhost:3001/api/v1/favorites', {
+    return fetch('http://localhost:3001/api/v1/favorites', {
       credentials: "include",
       method: 'POST',
       headers: {

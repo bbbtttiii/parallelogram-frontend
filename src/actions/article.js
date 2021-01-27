@@ -13,8 +13,10 @@ export const filterArticlesByTag = tag => {
 }
 
 export const getArticles = () => {
+  // debugger
+  let loading = document.getElementsByClassName('loading-spinner')[0]
   return dispatch => {
-    return fetch('https://localhost:3001/api/v1/get_articles', {
+    return fetch('http://localhost:3001/api/v1/get_articles', {
       credentials: "include",
       method: 'GET',
       headers: {
@@ -26,6 +28,7 @@ export const getArticles = () => {
       if (response.error) {
         alert(response.error)
       } else {
+        loading.remove()
         dispatch(showArticles(response.data))
       }
     })
