@@ -176,7 +176,8 @@ a.selected {
 }
 
 .card-title a {
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-color: pink;
   color: black;
 }
 
