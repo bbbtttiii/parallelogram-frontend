@@ -1,6 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import Card from './Card.js'
+import Loading from './Loading.js'
 
 const GridContent = props => {
 
@@ -20,7 +21,10 @@ const GridContent = props => {
       image_url={a.attributes.image_url}
     />)
 
-  return articleCards
+    return (articleCards.length === 0 
+      ? <Loading />
+      : articleCards
+    )
 }
 
 const mapStateToProps = state => {

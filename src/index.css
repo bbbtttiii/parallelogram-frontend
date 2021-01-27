@@ -439,11 +439,10 @@ a:visited {
   /* margin: 0 auto; */
   width: 100px;
   height: 100px;
-  display: inline-block;
+  display: inline;
   overflow: hidden;
   background: #ffffff;
-  transform: skewX(-30deg);
-}
+  transform: skewX(-30deg);}
 
 .loading {
   width: 100%;

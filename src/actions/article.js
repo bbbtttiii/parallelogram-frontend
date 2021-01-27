@@ -13,7 +13,6 @@ export const filterArticlesByTag = tag => {
 }
 
 export const getArticles = () => {
-  let loading = document.getElementsByClassName('loading-spinner')[0]
   return dispatch => {
     return fetch('https://parallelogram-api.herokuapp.com/api/v1/get_articles', {
       credentials: "include",
@@ -27,7 +26,6 @@ export const getArticles = () => {
       if (response.error) {
         alert(response.error)
       } else {
-        loading.remove()
         dispatch(showArticles(response.data))
       }
     })
