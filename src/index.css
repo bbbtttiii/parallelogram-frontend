@@ -176,13 +176,19 @@ a.selected {
 }
 
 .card-title a {
-  text-decoration: none;
   color: black;
+  text-decoration: underline;
+  transition: .5s;
+  text-decoration-color: transparent;
+  -webkit-text-decoration-color: transparent;
+  -moz-text-decoration-color: transparent;
 }
 
 .card-title a:hover {
   text-decoration: underline;
   text-decoration-color: pink;
+  -webkit-text-decoration-color: pink;
+  -moz-text-decoration-color: pink;
 }
 
 .card-photo {
