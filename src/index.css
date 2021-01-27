@@ -178,7 +178,6 @@ a.selected {
 .card-title a {
   color: black;
   text-decoration: underline;
-  transition: .5s;
   text-decoration-color: transparent;
   -webkit-text-decoration-color: transparent;
   -moz-text-decoration-color: transparent;
@@ -189,6 +188,11 @@ a.selected {
   text-decoration-color: pink;
   -webkit-text-decoration-color: pink;
   -moz-text-decoration-color: pink;
+  transition: .5s;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
 }
 
 .card-photo {
