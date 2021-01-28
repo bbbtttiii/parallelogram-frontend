@@ -1,12 +1,14 @@
 # Parallelogram
-A platform made for curated, multi-disciplinary articles from topics such as natural science, technology, psychology, philosophy, and more. Built with a React/Redux frontend and Rails API [backend](https://github.com/bbbtttiii/parallelogram-api).
+A digital magazine featuring articles from topics such as natural science, technology, psychology, philosophy, and more. Built with a React/Redux frontend and Rails API [backend](https://github.com/bbbtttiii/parallelogram-api).
+
+[Live Demo](https://parallelogram-mag.netlify.app/)
 
 ![parallelogram](public/parallelogram-gif.gif "Parallelogram")
 
 ## Getting Started
 
 - Clone
-- Make sure the [Rails server](https://github.com/bbbtttiii/parallelogram-api) is running!
+- Make sure the [Rails server](https://github.com/bbbtttiii/parallelogram-api) is running
 - Run `npm install` and `npm start`
 - Head to `localhost:3000` in your browser
 
