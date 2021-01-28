@@ -17,11 +17,11 @@ const Sidebar = ({ loggedIn, addFavorite, currentUser, articleId, articles }) =>
       ? <div className="Sidebar">
           <button className="like" onClick={handleClick}>❤</button><br/>
           {targetArticle && targetArticle.relationships.favorites.data.length}<br/><br/>
-          <a href="Share on Twitter"><img alt="Share on Twitter" src="/twitter.svg" width="40px"></img></a><br/>
-          <a href="Share on Facebook"><img alt="Share on Facebook" src="/facebook.svg" width="40px"></img></a><br/>
-          <a href="Share on Reddit"><img alt="Share on Reddit" src="/reddit.svg" width="40px"></img></a><br/>
-          <a href="Share on Linkedin"><img alt="Share on Linkedin" src="/linkedin.svg" width="40px"></img></a><br/>
-          <a href="Share with Email"><img alt="Share with Email" src="/gmail.svg" width="40px"></img></a>
+          <a href="twitter.com"><img alt="Share on Twitter" src="/twitter.svg" width="40px"></img></a><br/>
+          <a href="facebook.com"><img alt="Share on Facebook" src="/facebook.svg" width="40px"></img></a><br/>
+          <a href="reddit.com"><img alt="Share on Reddit" src="/reddit.svg" width="40px"></img></a><br/>
+          <a href="linkedin.com"><img alt="Share on Linkedin" src="/linkedin.svg" width="40px"></img></a><br/>
+          <a href="gmail.com"><img alt="Share with Email" src="/gmail.svg" width="40px"></img></a>
         </div>
       : null
   )
