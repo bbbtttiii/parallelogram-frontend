@@ -12,6 +12,13 @@ export const filterArticlesByTag = tag => {
   }
 }
 
+export const filterArticlesByAuthor = author => {
+  return {
+    type: 'FILTER_AUTHORS',
+    author
+  }
+}
+
 export const getArticles = () => {
   return dispatch => {
     return fetch('https://parallelogram-api.herokuapp.com/api/v1/get_articles', {
