@@ -17,7 +17,7 @@ const Nav = ({ currentUser, loggedIn }) => {
         <NavLink activeClassName='selected' to='/psychology'>Psychology</NavLink>
         <NavLink activeClassName='selected' to='/philosophy'>Philosophy</NavLink>
         <NavLink activeClassName='selected' to='/culture'>Culture</NavLink>
-        <NavLink activeClassName='selected' to='/about'>About</NavLink>
+        {/* <NavLink activeClassName='selected' to='/about'>About</NavLink> */}
       </div>
       <div className="right-nav">
         {loggedIn

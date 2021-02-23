@@ -9,7 +9,6 @@ const About = () => {
         <a href="http://www.nautil.us">Nautilus</a>, and
         <a href="http://www.medium.com">Medium</a>.
       </p>
-      
     </div>
   )
 }
