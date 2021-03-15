@@ -18,10 +18,11 @@ const Login = ({ loginFormData, updateLoginForm, login, history }) => {
 
   return (
     <form onSubmit={handleOnSubmit}>
+    <h2>Log In</h2>
       <input
         type="text"
         className="input-field"
-        placeholder="email"
+        placeholder="Email"
         name="email"
         value={loginFormData.email}
         onChange={handleInputChange} />
@@ -29,7 +30,7 @@ const Login = ({ loginFormData, updateLoginForm, login, history }) => {
         type="password"
         autoComplete="off"
         className="input-field"
-        placeholder="password"
+        placeholder="Password"
         name="password"
         value={loginFormData.password}
         onChange={handleInputChange} />

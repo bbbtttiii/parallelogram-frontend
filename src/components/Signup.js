@@ -17,31 +17,32 @@ const Signup = ({ signupFormData, updateSignupForm, signup, history }) => {
   }
 
   return (
-    <form onSubmit={handleOnSubmit}>
-      <input
-        type="text"
-        className="input-field"
-        placeholder="desired username"
-        name="username"
-        value={signupFormData.username}
-        onChange={handleInputChange} />
-      <input
-        type="text"
-        className="input-field"
-        placeholder="email"
-        name="email"
-        value={signupFormData.email}
-        onChange={handleInputChange} />
-      <input
-        type="password"
-        autoComplete="off"
-        className="input-field"
-        placeholder="password"
-        name="password"
-        value={signupFormData.password}
-        onChange={handleInputChange} />
-      <input type="submit" value="Sign Up"/>
-    </form>
+      <form onSubmit={handleOnSubmit}>
+      <h2>Create an Account</h2>
+        <input
+          type="text"
+          className="input-field"
+          placeholder="Desired Username"
+          name="username"
+          value={signupFormData.username}
+          onChange={handleInputChange} />
+        <input
+          type="text"
+          className="input-field"
+          placeholder="Email"
+          name="email"
+          value={signupFormData.email}
+          onChange={handleInputChange} />
+        <input
+          type="password"
+          autoComplete="off"
+          className="input-field"
+          placeholder="Password"
+          name="password"
+          value={signupFormData.password}
+          onChange={handleInputChange} />
+        <input type="submit" value="Sign Up"/>
+      </form>
   )
 }
 
